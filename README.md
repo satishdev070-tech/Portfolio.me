@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# HelloMe
 
-## Getting Started
+Professional websites for every profession. *Create your professional identity once. Publish it everywhere.*
 
-First, run the development server:
+Next.js 16 · React 19 · Tailwind 4 · Supabase (Postgres + RLS, Auth, Storage) · TypeScript.
+
+## Run locally
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run db:start        # local Supabase (Docker); applies migrations + seed
+cp .env.example .env.local   # fill from `supabase status` (anon + service role keys)
+npm run dev             # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Published sites are served at `http://<slug>.localhost:3000` (browsers resolve `*.localhost`), or at
+`http://localhost:3000/u/<slug>`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Make yourself a platform admin (after signing up): `node scripts/grant-admin.mjs you@example.com`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Development defaults: `AI_ALLOW_MOCK=true` (deterministic mock AI + rule-based CV parsing) and
+`BILLING_PROVIDER=dev` (upgrades activate instantly). Never use either in production.
 
-## Learn More
+## Checks
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run check   # typecheck, lint, unit tests, DB integration tests (needs db:start), build
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Docs
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[Product architecture](docs/PRODUCT_ARCHITECTURE.md) · [Database](docs/DATABASE_ARCHITECTURE.md) ·
+[Templates](docs/TEMPLATE_SYSTEM.md) · [Publishing](docs/PUBLISHING_ARCHITECTURE.md) ·
+[Subscriptions](docs/SUBSCRIPTION_SYSTEM.md) · [Billing](docs/BILLING_ARCHITECTURE.md) ·
+[AI](docs/AI_ARCHITECTURE.md) · [Security](docs/SECURITY.md) · [Status](docs/IMPLEMENTATION_STATUS.md)

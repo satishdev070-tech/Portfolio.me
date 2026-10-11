@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" fill="none" stroke="currentColor">
+  <rect x="10" y="10" width="380" height="220" rx="6" stroke-width="1" opacity="0.3" />
+
+  <!-- Kushan Sculpture & Stucco Art Carving Motifs -->
+  <g transform="translate(100, 120)">
+    <!-- Sarnath / Mathura Red Sandstone Lotus Medallion -->
+    <circle cx="0" cy="0" r="55" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="45" stroke-width="0.8" stroke-dasharray="3 3" />
+    <circle cx="0" cy="0" r="20" stroke-width="1" />
+    <circle cx="0" cy="0" r="6" fill="currentColor" opacity="0.5" />
+    <!-- 8 Lotus Petals -->
+    <path d="M0,-45 C15,-30 15,-20 0,-20 C-15,-20 -15,-30 0,-45" stroke-width="1" />
+    <path d="M0,45 C15,30 15,20 0,20 C-15,20 -15,30 0,45" stroke-width="1" />
+    <path d="M-45,0 C-30,15 -20,15 -20,0 C-20,-15 -30,-15 -45,0" stroke-width="1" />
+    <path d="M45,0 C30,15 20,15 20,0 C20,-15 30,-15 45,0" stroke-width="1" />
+    <path d="M-32,-32 C-15,-25 -15,-15 -22,-22 C-15,-15 -25,-15 -32,-32" stroke-width="1" />
+    <path d="M32,32 C15,25 15,15 22,22 C15,15 25,15 32,32" stroke-width="1" />
+    <path d="M-32,32 C-25,15 -15,15 -22,22 C-15,15 -15,25 -32,32" stroke-width="1" />
+    <path d="M32,-32 C25,-15 15,-15 22,-22 C15,-15 15,-25 32,-32" stroke-width="1" />
+  </g>
+
+  <!-- National Museum Project Labels -->
+  <g transform="translate(190, 50)">
+    <text x="0" y="25" font-family="'Cormorant Garamond', serif" font-weight="bold" font-size="14" fill="currentColor" stroke="none">कुषाण मूर्तिकला एवं स्टुको संग्रह</text>
+    <text x="0" y="44" font-family="'Cormorant Garamond', serif" font-size="12" fill="currentColor" stroke="none" opacity="0.8">National Museum, New Delhi</text>
+    <text x="0" y="70" font-family="monospace" font-size="9" fill="currentColor" stroke="none" opacity="0.7">TAGORE NATIONAL SCHOLARSHIP</text>
+    <text x="0" y="88" font-family="monospace" font-size="9" fill="currentColor" stroke="none" opacity="0.7">Gandharan &amp; Mathuran Stucco Art</text>
+    <text x="0" y="106" font-family="monospace" font-size="9" fill="currentColor" stroke="none" opacity="0.7">Systematic Corpus Cataloguing</text>
+    
+    <rect x="0" y="125" width="170" height="24" rx="4" stroke="var(--accent)" stroke-width="1" fill="currentColor" opacity="0.05" />
+    <text x="10" y="141" font-family="monospace" font-size="9" font-weight="bold" fill="currentColor" stroke="none">ACCESSION: NM-ARCH-2020</text>
+  </g>
+</svg>

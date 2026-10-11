@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" fill="none" stroke="currentColor">
+  <defs>
+    <!-- Hatch pattern for archaeological stratigraphic layer -->
+    <pattern id="strataHatch" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="currentColor" stroke-width="0.75" opacity="0.4" />
+    </pattern>
+    <pattern id="trowelDot" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="currentColor" opacity="0.35" />
+    </pattern>
+  </defs>
+
+  <!-- Background Stratigraphic Curves (Excavation Mound Contours) -->
+  <g opacity="0.35" stroke-width="1.2">
+    <path d="M-50,160 C300,120 700,220 1100,140 C1350,90 1500,180 1700,150" />
+    <path d="M-50,240 C350,190 750,300 1150,220 C1400,170 1550,260 1700,230" />
+    <path d="M-50,320 C400,260 800,380 1200,300 C1450,250 1600,340 1700,310" />
+    <path d="M-50,410 C380,360 850,470 1250,390 C1480,340 1620,430 1700,400" />
+    <path d="M-50,510 C320,470 820,580 1220,500 C1460,450 1620,530 1700,500" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Archaeological Trench Coordinates & Datum Lines -->
+  <g opacity="0.3" stroke-width="0.8">
+    <!-- Vertical trench pegs -->
+    <line x1="200" y1="80" x2="200" y2="700" stroke-dasharray="3 6" />
+    <line x1="550" y1="80" x2="550" y2="700" stroke-dasharray="3 6" />
+    <line x1="900" y1="80" x2="900" y2="700" stroke-dasharray="3 6" />
+    <line x1="1250" y1="80" x2="1250" y2="700" stroke-dasharray="3 6" />
+
+    <!-- Benchmark datum crosses -->
+    <path d="M190,200 h20 M200,190 v20" />
+    <path d="M540,200 h20 M550,190 v20" />
+    <path d="M890,200 h20 M900,190 v20" />
+    <path d="M1240,200 h20 M1250,190 v20" />
+
+    <path d="M190,400 h20 M200,390 v20" />
+    <path d="M540,400 h20 M550,390 v20" />
+    <path d="M890,400 h20 M900,390 v20" />
+    <path d="M1240,400 h20 M1250,390 v20" />
+  </g>
+
+  <!-- Ancient Brahmi & Devanagari Epigraphic Script Inscription Frieze -->
+  <g opacity="0.25" font-family="'Cormorant Garamond', serif" font-size="28" fill="currentColor" stroke="none">
+    <!-- Ancient Brahmi glyphs: Ye Dharma Hetu / Ashokan Edicts -->
+    <text x="180" y="100" letter-spacing="18">𑀥 𑀁 𑀫 𑀮𑀺 𑀔𑀺 𑀢 𑀲 𑀢 𑀫 𑀧 𑀼 𑀭 𑀸 𑀢 𑀢𑁆𑀯</text>
+    <!-- Devanagari Epigraph Subtitle -->
+    <text x="180" y="140" font-size="14" letter-spacing="6" opacity="0.8">पुरातत्व एवं पुरालेखशास्त्र अनुसन्धान · ARCHAEOLOGIA ET EPIGRAPHIA</text>
+  </g>
+
+  <!-- Harappan / PGW Ceramic Rim Profile & Stratum Section Drawing -->
+  <g opacity="0.3" transform="translate(1180, 240)" stroke-width="1.2">
+    <!-- Vessel Rim Cross-Section Drawing -->
+    <path d="M180,50 C140,50 110,70 90,110 C70,150 70,200 80,240 C90,280 130,310 180,310" stroke-width="1.8" />
+    <path d="M180,58 C145,58 118,76 100,112 C82,150 82,196 91,234 C100,272 136,302 180,302" stroke-width="0.8" stroke-dasharray="3 3" />
+    <line x1="180" y1="40" x2="180" y2="320" stroke-dasharray="2 4" stroke-width="0.8" />
+    <!-- Pottery Measurements / Calliper ticks -->
+    <line x1="60" y1="110" x2="80" y2="110" />
+    <line x1="60" y1="200" x2="70" y2="200" />
+    <line x1="60" y1="310" x2="80" y2="310" />
+    <text x="10" y="205" font-family="monospace" font-size="9" fill="currentColor" stroke="none">Ø 28.4cm</text>
+    <text x="95" y="340" font-family="monospace" font-size="9" fill="currentColor" stroke="none">PGW RIM SEC-B</text>
+  </g>
+
+  <!-- Ancient Monument / Ashokan Pillar Capital & Lotus Medallion Line Art -->
+  <g opacity="0.28" transform="translate(940, 480)" stroke-width="1.2">
+    <!-- Pillar Shaft -->
+    <line x1="180" y1="120" x2="180" y2="380" stroke-width="1.5" />
+    <line x1="220" y1="120" x2="220" y2="380" stroke-width="1.5" />
+    <!-- Inverted Lotus Fluting -->
+    <path d="M165,120 C165,80 180,60 200,60 C220,60 235,80 235,120 Z" />
+    <!-- Abacus Band -->
+    <rect x="155" y="45" width="90" height="15" rx="1" />
+    <!-- Wheel / Chakra -->
+    <circle cx="200" cy="18" r="22" stroke-width="1" />
+    <circle cx="200" cy="18" r="5" stroke-width="0.75" />
+    <line x1="200" y1="-4" x2="200" y2="40" stroke-width="0.75" />
+    <line x1="178" y1="18" x2="222" y2="18" stroke-width="0.75" />
+    <line x1="185" y1="3" x2="215" y2="33" stroke-width="0.75" />
+    <line x1="185" y1="33" x2="215" y2="3" stroke-width="0.75" />
+    <text x="255" y="55" font-family="monospace" font-size="8" fill="currentColor" stroke="none">CAPITAL ELEVATION</text>
+  </g>
+</svg>

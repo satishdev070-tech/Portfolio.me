@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" fill="none" stroke="currentColor">
+  <!-- Archaeological Contour & Topographic Lines (Mound Excavation) -->
+  <g opacity="0.4" stroke-width="1" stroke-dasharray="3 4">
+    <path d="M-100,200 C300,180 600,240 900,190 C1200,140 1400,220 1600,200" />
+    <path d="M-100,260 C250,230 550,300 850,250 C1150,200 1350,280 1600,260" />
+    <path d="M-100,320 C200,290 500,360 800,310 C1100,260 1300,340 1600,320" />
+    <path d="M-100,380 C150,350 450,420 750,370 C1050,320 1250,400 1600,380" />
+    <path d="M-100,440 C100,410 400,480 700,430 C1000,380 1200,460 1600,440" />
+    <path d="M-100,500 C80,480 350,540 650,490 C950,440 1150,520 1600,500" />
+  </g>
+
+  <!-- Archaeological Trench Coordinate Grid & Benchmarks -->
+  <g opacity="0.35" stroke-width="0.75">
+    <!-- Grid Crosses -->
+    <path d="M150,130 L150,150 M140,140 L160,140" />
+    <path d="M450,130 L450,150 M440,140 L460,140" />
+    <path d="M750,130 L750,150 M740,140 L760,140" />
+    <path d="M1050,130 L1050,150 M1040,140 L1060,140" />
+    <path d="M1350,130 L1350,150 M1340,140 L1360,140" />
+
+    <path d="M150,330 L150,350 M140,340 L160,340" />
+    <path d="M450,330 L450,350 M440,340 L460,340" />
+    <path d="M750,330 L750,350 M740,340 L760,340" />
+    <path d="M1050,330 L1050,350 M1040,340 L1060,340" />
+    <path d="M1350,330 L1350,350 M1340,340 L1360,340" />
+
+    <path d="M150,530 L150,550 M140,540 L160,540" />
+    <path d="M450,530 L450,550 M440,540 L460,540" />
+    <path d="M750,530 L750,550 M740,540 L760,540" />
+    <path d="M1050,530 L1050,550 M1040,540 L1060,540" />
+    <path d="M1350,530 L1350,550 M1340,540 L1360,540" />
+
+    <!-- Grid Lines (Trench Lay-out) -->
+    <line x1="150" y1="140" x2="1350" y2="140" stroke-dasharray="2 8" />
+    <line x1="150" y1="340" x2="1350" y2="340" stroke-dasharray="2 8" />
+    <line x1="150" y1="540" x2="1350" y2="540" stroke-dasharray="2 8" />
+    <line x1="450" y1="100" x2="450" y2="600" stroke-dasharray="2 8" />
+    <line x1="1050" y1="100" x2="1050" y2="600" stroke-dasharray="2 8" />
+  </g>
+
+  <!-- Architectural Monument Elevation Line Art (Ancient Plinth & Pillar Motif) -->
+  <g opacity="0.3" stroke-width="1.2">
+    <!-- Pillar Shaft & Base -->
+    <path d="M1240,680 L1240,280" />
+    <path d="M1270,680 L1270,280" />
+    <rect x="1225" y="680" width="60" height="15" rx="1" />
+    <rect x="1215" y="695" width="80" height="20" rx="2" />
+    
+    <!-- Capital / Abacus & Inverted Bell Lotus Motif -->
+    <path d="M1230,280 C1230,260 1240,245 1255,245 C1270,245 1280,260 1280,280 Z" />
+    <rect x="1220" y="240" width="70" height="10" rx="1" />
+    <!-- Wheel / Chakra outline -->
+    <circle cx="1255" cy="210" r="22" stroke-width="1" />
+    <circle cx="1255" cy="210" r="6" stroke-width="0.75" />
+    <line x1="1255" y1="188" x2="1255" y2="232" stroke-width="0.75" />
+    <line x1="1233" y1="210" x2="1277" y2="210" stroke-width="0.75" />
+    <line x1="1240" y1="195" x2="1270" y2="225" stroke-width="0.75" />
+    <line x1="1240" y1="225" x2="1270" y2="195" stroke-width="0.75" />
+
+    <!-- Stupa Elevation Wireframe Curve -->
+    <path d="M1020,715 C1020,620 1090,560 1170,560 C1250,560 1320,620 1320,715" stroke-dasharray="4 4" stroke-width="0.9" />
+    <!-- Harmika & Chhatravali -->
+    <rect x="1155" y="545" width="30" height="15" stroke-width="0.8" />
+    <line x1="1170" y1="545" x2="1170" y2="505" stroke-width="0.8" />
+    <line x1="1158" y1="520" x2="1182" y2="520" stroke-width="0.8" />
+    <line x1="1162" y1="512" x2="1178" y2="512" stroke-width="0.8" />
+    <line x1="1165" y1="505" x2="1175" y2="505" stroke-width="0.8" />
+  </g>
+
+  <!-- Stratigraphic Section Labeling -->
+  <g opacity="0.3" font-family="monospace" font-size="10" fill="currentColor" stroke="none">
+    <text x="170" y="135">TRENCH-A1 [PGW HORIZON]</text>
+    <text x="470" y="135">DATUM LEVEL 0.00m</text>
+    <text x="170" y="335">STRATUM II [EARLY HISTORICAL]</text>
+    <text x="170" y="535">STRATUM IV [PRE-HARAPPAN]</text>
+    <text x="1070" y="135">BM #04 [EAST SECTOR]</text>
+  </g>
+</svg>

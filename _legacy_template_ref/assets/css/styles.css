@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;450;500;600&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap');
+
+/* ========================================================
+   THEME 1: PARCHMENT (Classic Editorial / Default Light)
+   ======================================================== */
+:root, [data-theme="parchment"] {
+  --bg: #FBFBFA;
+  --bg-subtle: #F4F3EF;
+  --bg-hover: #EFECE6;
+  --text-main: #18181B;
+  --text-muted: #6B7280;
+  --text-dim: #9CA3AF;
+  --border: #E5E5E0;
+  --border-strong: #D1D1C7;
+  --accent: #9A3412;
+  --accent-subtle: #FDF5F2;
+  --nav-bg: rgba(251, 251, 250, 0.94);
+  --bg-illus-opacity: 0.18;
+}
+
+/* ========================================================
+   THEME 2: OBSIDIAN (Midnight Academic Dark)
+   ======================================================== */
+[data-theme="obsidian"] {
+  --bg: #121214;
+  --bg-subtle: #18181B;
+  --bg-hover: #222226;
+  --text-main: #F4F4F5;
+  --text-muted: #9CA3AF;
+  --text-dim: #52525B;
+  --border: #27272A;
+  --border-strong: #3F3F46;
+  --accent: #EA580C;
+  --accent-subtle: #2A1711;
+  --nav-bg: rgba(18, 18, 20, 0.94);
+  --bg-illus-opacity: 0.22;
+}
+
+/* ========================================================
+   THEME 3: TERRACOTTA (Sun-baked Protohistoric Clay)
+   ======================================================== */
+[data-theme="terracotta"] {
+  --bg: #F8F2ED;
+  --bg-subtle: #EFE5DD;
+  --bg-hover: #E6D8CE;
+  --text-main: #2E1E17;
+  --text-muted: #785D51;
+  --text-dim: #A88F83;
+  --border: #E4D4C8;
+  --border-strong: #CDBBB0;
+  --accent: #B94719;
+  --accent-subtle: #FAECE5;
+  --nav-bg: rgba(248, 242, 237, 0.94);
+  --bg-illus-opacity: 0.20;
+}
+
+/* ========================================================
+   THEME 4: SANDSTONE (Ancient Lithic Monument & Ochre)
+   ======================================================== */
+[data-theme="sandstone"] {
+  --bg: #F4EFE6;
+  --bg-subtle: #EBE3D7;
+  --bg-hover: #E0D7C9;
+  --text-main: #24201B;
+  --text-muted: #6E665B;
+  --text-dim: #9E9588;
+  --border: #DDD3C3;
+  --border-strong: #C5BAA8;
+  --accent: #A16207;
+  --accent-subtle: #FBF6EE;
+  --nav-bg: rgba(244, 239, 230, 0.94);
+  --bg-illus-opacity: 0.20;
+}
+
+/* ========================================================
+   THEME 5: SAGE (Fieldwork Notebook & Lichen Stone)
+   ======================================================== */
+[data-theme="sage"] {
+  --bg: #F2F4F2;
+  --bg-subtle: #E5E9E5;
+  --bg-hover: #D9DFDA;
+  --text-main: #1A241E;
+  --text-muted: #5C6B61;
+  --text-dim: #8D9B91;
+  --border: #D2D9D3;
+  --border-strong: #B8C2BA;
+  --accent: #2D6A4F;
+  --accent-subtle: #EDF4F0;
+  --nav-bg: rgba(242, 244, 242, 0.94);
+  --bg-illus-opacity: 0.20;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg);
+  color: var(--text-main);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  min-height: 100vh;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Devanagari & Latin Serif Typography */
+.serif {
+  font-family: 'Cormorant Garamond', 'Noto Serif Devanagari', Georgia, serif;
+}
+
+.devanagari {
+  font-family: 'Noto Serif Devanagari', 'Cormorant Garamond', Georgia, serif;
+}
+
+/* ========================================================
+   ARCHAEOLOGICAL BACKGROUND ILLUSTRATION WATERMARK
+   ======================================================== */
+.archaeology-bg-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url('../images/archaeology-hero-illustration.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1600px auto;
+  opacity: var(--bg-illus-opacity);
+  mask-image: radial-gradient(ellipse 95% 85% at 50% 25%, black 40%, transparent 94%);
+  -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 25%, black 40%, transparent 94%);
+  transition: opacity 0.3s ease;
+}
+
+/* Nav */
+.site-nav {
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Restrained Tag Pills */
+.tag-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.22rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.tag-badge:hover {
+  border-color: var(--accent);
+  color: var(--text-main);
+}
+
+/* Portfolio Visual Project Cards */
+.project-card {
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (hover: hover) {
+  .project-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+}
+
+.project-card-image-wrap {
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg);
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-image-wrap img, .project-card-image-wrap svg {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+}
+
+/* Minimalist Link Styles */
+.editorial-link {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-decoration-color: var(--border-strong);
+  text-underline-offset: 4px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+.editorial-link:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* Theme Dropdown Menu */
+.theme-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 60;
+  width: 195px;
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  padding: 6px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+.theme-dropdown.show {
+  display: block;
+}
+
+.theme-option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-main);
+  text-align: left;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.theme-option-btn:hover {
+  background-color: var(--bg-hover);
+}
+
+.theme-option-btn.active {
+  background-color: var(--bg-hover);
+  font-weight: 600;
+}
+
+.theme-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  flex-shrink: 0;
+}
+
+/* Clean Custom Toast */
+#toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 100;
+  background-color: var(--bg-subtle);
+  color: var(--text-main);
+  border: 1px solid var(--border-strong);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Section Header Style with Icon */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.section-title svg {
+  color: var(--accent);
+}
+
+/* Language toggle button */
+.lang-btn {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  transition: all 0.15s ease;
+  background-color: var(--bg-subtle);
+}
+
+.lang-btn:hover {
+  color: var(--text-main);
+  border-color: var(--border-strong);
+}
+
+/* ========================================================
+   MOBILE RESPONSIVE ENHANCEMENTS
+   ======================================================== */
+
+.mobile-nav-closed {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.mobile-nav-open {
+  max-height: 600px;
+  overflow: hidden;
+  transition: max-height 0.35s ease-in-out;
+}
+
+/* Hamburger to X morph */
+.menu-open svg path {
+  d: path('M6 18L18 6M6 6l12 12');
+  transition: d 0.2s ease;
+}
+
+/* Active nav link highlight (set by IntersectionObserver) */
+nav a[href^="#"].active,
+#mobile-nav a[href^="#"].active {
+  color: var(--accent) !important;
+  font-weight: 600;
+}
+
+/* Desktop active nav underline */
+.hidden.md\\:flex a[href^="#"].active {
+  color: var(--text-main);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent);
+}
+
+@media (max-width: 767px) {
+  /* 1. Mobile Navigation */
+  .site-nav .max-w-4xl {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  #mobile-nav a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+
+  /* Desktop nav links: active state */
+  nav a[href^="#"].active {
+    color: var(--accent);
+  }
+  
+  /* 5. Touch Targets */
+  #mobile-nav button,
+  .lang-btn,
+  .btn-print,
+  #menu-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .tag-badge {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8125rem;
+  }
+
+  /* 6. Theme Dropdown Mobile */
+  .theme-dropdown {
+    right: -8px;
+    max-width: calc(100vw - 32px);
+  }
+
+  /* 7. Toast Mobile */
+  #toast {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    width: auto;
+    text-align: center;
+    padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* 8. Background Illustration Mobile */
+  .archaeology-bg-overlay {
+    opacity: 0.08 !important;
+    background-size: 800px auto;
+  }
+
+  /* Main content padding */
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  /* Section spacing */
+  main > section,
+  main > header {
+    margin-bottom: 0;
+  }
+
+  /* Back-to-top button position for mobile */
+  #back-to-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 639px) {
+  /* 2. Mobile Typography */
+  h1.serif {
+    font-size: 1.75rem !important;
+  }
+
+  /* About section serif text */
+  #about .serif {
+    font-size: 1rem !important;
+    line-height: 1.7;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  /* 3. Profile Header Mobile — center photo when stacked */
+  header .flex-shrink-0 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Profile photo size on mobile */
+  header .flex-shrink-0 > div {
+    width: 120px !important;
+    height: 160px !important;
+  }
+
+  /* 4. Project Cards Mobile */
+  .project-card-image-wrap img,
+  .project-card-image-wrap svg {
+    max-height: 140px;
+  }
+
+  .project-card .p-5 {
+    padding: 1rem !important;
+  }
+
+  /* 11. Skills Grid Mobile — single column */
+  .grid.sm\\:grid-cols-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* 12. Footer Mobile — stack and center */
+  footer {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 0.75rem !important;
+  }
+
+  /* Contact info text wrapping */
+  #contact a,
+  #contact span {
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (max-width: 479px) {
+  /* Very small screens — extra tight */
+  h1.serif {
+    font-size: 1.5rem !important;
+  }
+
+  /* Force email/phone to break */
+  [data-copy] span,
+  .editorial-link {
+    word-break: break-all;
+  }
+
+  /* Compact section header baseline row */
+  .flex.items-baseline.justify-between {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+/* Print Styles for PDF / Print CV */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111111 !important;
+    font-size: 10.5pt !important;
+    line-height: 1.45 !important;
+  }
+  
+  .archaeology-bg-overlay {
+    display: none !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+  
+  article, .project-card {
+    page-break-inside: avoid;
+  }
+  
+  a {
+    color: #111111 !important;
+    text-decoration: none !important;
+  }
+}

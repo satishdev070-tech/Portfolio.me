@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="parchment" data-lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Ajeet Kumar Mishra | अजीत कुमार मिश्रा — Doctoral Researcher in Archaeology</title>
+  <meta name="description" content="Academic portfolio and curriculum vitae of Ajeet Kumar Mishra, Doctoral Researcher at the Indian Institute of Heritage (IIH). Specializing in Indian archaeology, epigraphy, and museum studies." />
+  <meta name="author" content="Ajeet Kumar Mishra" />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Ajeet Kumar Mishra | अजीत कुमार मिश्रा — Academic Portfolio" />
+  <meta property="og:description" content="Doctoral Researcher in Archaeology | Heritage Documentation & Epigraphy Specialist" />
+  <meta property="og:type" content="profile" />
+  <meta property="og:image" content="assets/images/profile.jpeg" />
+
+  <link rel="icon" type="image/jpeg" href="assets/images/profile.jpeg" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ['class', '[data-theme="obsidian"]'],
+      theme: {
+        extend: {
+          colors: {
+            accent: 'var(--accent)',
+            surface: 'var(--bg-subtle)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ajeet Kumar Mishra",
+    "alternateName": "अजीत कुमार मिश्रा",
+    "jobTitle": "Doctoral Researcher in Archaeology",
+    "description": "Doctoral Researcher in Archaeology at the Indian Institute of Heritage, specializing in Indian archaeology, epigraphy, and museum studies.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Noida",
+      "addressRegion": "Uttar Pradesh",
+      "addressCountry": "India"
+    },
+    "email": "mailto:ajeet.mishra@example.com",
+    "telephone": "+91-9876543210",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Indian Institute of Heritage (IIH)"
+    },
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Indian Institute of Heritage (IIH)"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "Banaras Hindu University"
+      }
+    ],
+    "awards": ["Tagore National Scholarship"]
+  }
+  </script>
+</head>
+
+<body class="selection:bg-stone-200 dark:selection:bg-stone-800">
+
+  <!-- ==========================================
+       ARCHAEOLOGICAL BACKGROUND ILLUSTRATION WATERMARK
+       ========================================== -->
+  <div class="archaeology-bg-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================
+       NAVIGATION
+       ========================================== -->
+  <nav class="site-nav sticky top-0 z-50 transition-colors no-print">
+    <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
+      
+      <!-- Brand with Archaeological Seal Icon -->
+      <a href="#top" class="flex items-center gap-2.5 font-medium text-sm tracking-tight text-[var(--text-main)] hover:opacity-85 transition-opacity">
+        <svg class="w-4 h-4 text-[var(--accent)] flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 3v18M3 12h18" stroke-dasharray="2 3" />
+          <circle cx="12" cy="12" r="4" />
+          <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+        </svg>
+        <span data-en="Ajeet Kumar Mishra" data-hi="अजीत कुमार मिश्रा">Ajeet Kumar Mishra</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center space-x-5 text-xs text-[var(--text-muted)] font-medium">
+        <a href="#about" class="hover:text-[var(--text-main)] transition-colors" data-en="About" data-hi="परिचय">About</a>
+        <a href="#projects" class="hover:text-[var(--text-main)] transition-colors" data-en="Projects" data-hi="परियोजनाएं">Projects</a>
+        <a href="#experience" class="hover:text-[var(--text-main)] transition-colors" data-en="Fieldwork" data-hi="उत्खनन">Fieldwork</a>
+        <a href="#education" class="hover:text-[var(--text-main)] transition-colors" data-en="Education" data-hi="शिक्षा">Education</a>
+        <a href="#fellowships" class="hover:text-[var(--text-main)] transition-colors" data-en="Awards" data-hi="सम्मान">Awards</a>
+        <a href="#skills" class="hover:text-[var(--text-main)] transition-colors" data-en="Skills" data-hi="दक्षता">Skills</a>
+        <a href="#contact" class="hover:text-[var(--text-main)] transition-colors" data-en="Contact" data-hi="संपर्क">Contact</a>
+      </div>
+
+      <!-- Actions: Language Toggle + Theme Selector + Print CV -->
+      <div class="flex items-center space-x-2.5">
+        
+        <!-- Bilingual Toggle Button (EN / हिन्दी) -->
+        <button type="button" class="lang-toggle-btn lang-btn inline-flex items-center gap-1.5" title="Switch Language / भाषा बदलें">
+          <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span class="lang-btn-label">हिन्दी</span>
+        </button>
+
+        <!-- Print CV Button -->
+        <button type="button" class="btn-print hidden sm:inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1 rounded border border-[var(--border)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:border-[var(--border-strong)] transition-all">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <polyline points="6 9 6 2 18 2 18 9" />
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+            <rect x="6" y="14" width="12" height="8" />
+          </svg>
+          <span data-en="Print CV" data-hi="सीवी प्रिंट करें">Print CV</span>
+        </button>
+
+        <!-- 5-Theme Switcher Dropdown -->
+        <div class="relative">
+          <button id="theme-btn" type="button" aria-haspopup="true" aria-expanded="false" class="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium rounded border border-[var(--border)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:border-[var(--border-strong)] transition-all" title="Change Theme">
+            <span id="theme-dot-active" class="w-2 h-2 rounded-full inline-block" style="background-color: #9A3412;"></span>
+            <span id="current-theme-name">Parchment</span>
+            <svg class="w-3 h-3 text-[var(--text-dim)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <!-- Dropdown Popover -->
+          <div id="theme-dropdown" class="theme-dropdown">
+            <div class="text-[10px] uppercase font-semibold text-[var(--text-dim)] px-2 py-1 tracking-wider">
+              Color Theme
+            </div>
+            
+            <button type="button" data-set-theme="parchment" class="theme-option-btn">
+              <span class="flex items-center gap-2">
+                <span class="theme-swatch" style="background-color: #FBFBFA; border-color: #9A3412;"></span>
+                <span>Parchment</span>
+              </span>
+              <span class="theme-check text-xs text-[var(--accent)]">&check;</span>
+            </button>
+
+            <button type="button" data-set-theme="obsidian" class="theme-option-btn">
+              <span class="flex items-center gap-2">
+                <span class="theme-swatch" style="background-color: #121214; border-color: #EA580C;"></span>
+                <span>Obsidian</span>
+              </span>
+              <span class="theme-check text-xs text-[var(--accent)]">&check;</span>
+            </button>
+
+            <button type="button" data-set-theme="terracotta" class="theme-option-btn">
+              <span class="flex items-center gap-2">
+                <span class="theme-swatch" style="background-color: #F8F2ED; border-color: #B94719;"></span>
+                <span>Terracotta</span>
+              </span>
+              <span class="theme-check text-xs text-[var(--accent)]">&check;</span>
+            </button>
+
+            <button type="button" data-set-theme="sandstone" class="theme-option-btn">
+              <span class="flex items-center gap-2">
+                <span class="theme-swatch" style="background-color: #F4EFE6; border-color: #A16207;"></span>
+                <span>Sandstone</span>
+              </span>
+              <span class="theme-check text-xs text-[var(--accent)]">&check;</span>
+            </button>
+
+            <button type="button" data-set-theme="sage" class="theme-option-btn">
+              <span class="flex items-center gap-2">
+                <span class="theme-swatch" style="background-color: #F2F4F2; border-color: #2D6A4F;"></span>
+                <span>Sage</span>
+              </span>
+              <span class="theme-check text-xs text-[var(--accent)]">&check;</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Hamburger -->
+        <button id="menu-btn" type="button" aria-label="Toggle menu" class="md:hidden p-1.5 text-[var(--text-muted)]">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-nav" class="mobile-nav-closed md:hidden px-6 py-4 border-t border-[var(--border)] bg-[var(--bg)] space-y-1 text-sm">
+      <a href="#about" class="mobile-nav-link block text-[var(--text-muted)] hover:text-[var(--text-main)] py-2" data-en="About" data-hi="परिचय">About</a>
+      <a href="#projects" class="mobile-nav-link block text-[var(--text-muted)] hover:text-[var(--text-main)] py-2" data-en="Key Projects" data-hi="प्रमुख परियोजनाएं">Key Projects</a>
+      <a href="#experience" class="mobile-nav-link block text-[var(--text-muted)] hover:text-[var(--text-main)] py-2" data-en="Fieldwork &amp; Experience" data-hi="उत्खनन एवं अनुभव">Fieldwork &amp; Experience</a>
+      <a href="#education" class="mobile-nav-link block text-[var(--text-muted)] hover:text-[var(--text-main)] py-2" data-en="Education" data-hi="शिक्षा">Education</a>
+      <a href="#fellowships" class="mobile-nav-link block text-[var(--text-muted)] hover:text-[var(--text-main)] py-2" data-en="Fellowships &amp; Awards" data-hi="छात्रवृत्ति एवं सम्मान">Fellowships &amp; Awards</a>
+      <a href="#skills" class="mobile-nav-link block text-[var(--text-muted)] hover:text-[var(--text-main)] py-2" data-en="Skills" data-hi="दक्षता एवं पद्धतियाँ">Skills</a>
+      <a href="#contact" class="mobile-nav-link block text-[var(--text-muted)] hover:text-[var(--text-main)] py-2" data-en="Contact" data-hi="संपर्क">Contact</a>
+
+      <div class="pt-3 border-t border-[var(--border)] flex items-center justify-between">
+        <button type="button" class="btn-print text-xs font-medium px-3 py-1.5 rounded border border-[var(--border)]">
+          Print CV
+        </button>
+        <button type="button" class="lang-toggle-btn lang-btn text-xs font-medium">
+          <span class="lang-btn-label">हिन्दी</span>
+        </button>
+      </div>
+
+      <!-- 5-Theme Selector in Mobile Menu -->
+      <div class="pt-3 border-t border-[var(--border)]">
+        <span class="text-[10px] uppercase font-semibold text-[var(--text-dim)] tracking-wider block mb-2">Switch Theme</span>
+        <div class="grid grid-cols-2 gap-1.5">
+          <button type="button" data-set-theme="parchment" class="theme-option-btn justify-start gap-2 border border-[var(--border)] py-1.5 px-2">
+            <span class="theme-swatch" style="background-color: #FBFBFA; border-color: #9A3412;"></span>
+            <span>Parchment</span>
+          </button>
+          <button type="button" data-set-theme="obsidian" class="theme-option-btn justify-start gap-2 border border-[var(--border)] py-1.5 px-2">
+            <span class="theme-swatch" style="background-color: #121214; border-color: #EA580C;"></span>
+            <span>Obsidian</span>
+          </button>
+          <button type="button" data-set-theme="terracotta" class="theme-option-btn justify-start gap-2 border border-[var(--border)] py-1.5 px-2">
+            <span class="theme-swatch" style="background-color: #F8F2ED; border-color: #B94719;"></span>
+            <span>Terracotta</span>
+          </button>
+          <button type="button" data-set-theme="sandstone" class="theme-option-btn justify-start gap-2 border border-[var(--border)] py-1.5 px-2">
+            <span class="theme-swatch" style="background-color: #F4EFE6; border-color: #A16207;"></span>
+            <span>Sandstone</span>
+          </button>
+          <button type="button" data-set-theme="sage" class="theme-option-btn justify-start gap-2 border border-[var(--border)] py-1.5 px-2 col-span-2">
+            <span class="theme-swatch" style="background-color: #F2F4F2; border-color: #2D6A4F;"></span>
+            <span>Sage</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================
+       MAIN CONTENT CONTAINER
+       ========================================== -->
+  <main id="top" class="relative z-10 max-w-4xl mx-auto px-6 py-12 md:py-20 space-y-16">
+
+    <!-- ==========================================
+         PROFILE HEADER
+         ========================================== -->
+    <header class="space-y-8 pb-12 border-b border-[var(--border)]">
+      
+      <div class="flex flex-col-reverse sm:flex-row sm:items-start justify-between gap-8">
+        
+        <!-- Text Info -->
+        <div class="space-y-4 max-w-xl">
+          <div>
+            <div class="text-xs uppercase tracking-widest text-[var(--accent)] font-semibold mb-1">
+              <span data-en="ARCHAEOLOGY &amp; EPIGRAPHY PORTFOLIO" data-hi="भारतीय पुरातत्व एवं पुरालेखशास्त्र शोध">ARCHAEOLOGY &amp; EPIGRAPHY PORTFOLIO</span>
+            </div>
+            
+            <h1 class="serif text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-[var(--text-main)]">
+              <span data-en="Ajeet Kumar Mishra" data-hi="अजीत कुमार मिश्रा">Ajeet Kumar Mishra</span>
+            </h1>
+            
+            <p class="text-base sm:text-lg text-[var(--text-muted)] mt-1.5 font-normal leading-snug">
+              <span data-en="Doctoral Researcher in Archaeology &amp; Heritage Documentation Specialist" data-hi="पुरातत्व में शोधार्थी | विरासत दस्तावेज़ीकरण एवं पुरालेख विशेषज्ञ">Doctoral Researcher in Archaeology &amp; Heritage Documentation Specialist</span>
+            </p>
+          </div>
+
+          <p class="text-sm sm:text-base text-[var(--text-muted)] leading-relaxed">
+            <span data-en="Ph.D. Scholar at the <strong class='text-[var(--text-main)] font-medium'>Indian Institute of Heritage (IIH)</strong>, Noida. Specializing in Indian protohistory, epigraphic documentation, and museum collection cataloguing." data-hi="<strong class='text-[var(--text-main)] font-medium'>भारतीय विरासत संस्थान (IIH)</strong>, नोएडा में पीएच.डी. शोधार्थी। भारतीय प्राक-इतिहास, पुरालेख दस्तावेज़ीकरण तथा संग्रहालय संग्रह प्रबंधन में विशेष शोध।">Ph.D. Scholar at the <strong class="text-[var(--text-main)] font-medium">Indian Institute of Heritage (IIH)</strong>, Noida. Specializing in Indian protohistory, epigraphic documentation, and museum collection cataloguing.</span>
+          </p>
+
+          <!-- Contact items with SVG Icons -->
+          <div class="pt-2 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-[var(--text-muted)]">
+            
+            <!-- Location Icon -->
+            <span class="inline-flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span data-en="Noida, Uttar Pradesh, India" data-hi="नोएडा, उत्तर प्रदेश, भारत">Noida, Uttar Pradesh, India</span>
+            </span>
+
+            <!-- Email with Copy Icon -->
+            <button type="button" data-copy="ajeet.mishra@example.com" class="inline-flex items-center gap-1.5 hover:text-[var(--text-main)] underline underline-offset-4 transition-colors">
+              <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span>ajeet.mishra@example.com</span>
+            </button>
+
+            <!-- Phone with Copy Icon -->
+            <button type="button" data-copy="+919876543210" class="inline-flex items-center gap-1.5 hover:text-[var(--text-main)] underline underline-offset-4 transition-colors">
+              <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>+91-9876543210</span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- Photograph (Clean portrait frame with uploaded photo) -->
+        <div class="flex-shrink-0">
+          <div class="w-36 h-48 sm:w-44 sm:h-60 rounded-lg overflow-hidden border border-[var(--border-strong)] bg-[var(--bg-subtle)] shadow-sm">
+            <img 
+              src="assets/images/profile.jpeg" 
+              alt="Portrait of Ajeet Kumar Mishra" 
+              class="w-full h-full object-cover object-top hover:scale-[1.02] transition-transform duration-300"
+            />
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- ==========================================
+         ABOUT (Bilingual)
+         ========================================== -->
+    <section id="about" class="space-y-4">
+      <div class="section-title">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+        </svg>
+        <span data-en="About · Academic Profile" data-hi="परिचय · शोध प्रोफ़ाइल">About · Academic Profile</span>
+      </div>
+      <div class="serif text-lg sm:text-xl text-[var(--text-main)] leading-relaxed" data-en="A highly accomplished Research Scholar pursuing a Ph.D. in Archaeology, specializing in Indian archaeology, epigraphy, and museum studies, with a strong academic record and practical field experience. Proven ability to identify, document, and interpret historical and cultural heritage, evidenced by contributions to significant archaeological excavations and the cataloguing of national collections. Leverages interdisciplinary expertise to drive impactful research and preserve invaluable cultural assets, positioning for advanced research roles or heritage management opportunities." data-hi="भारतीय पुरातत्व, पुरालेखशास्त्र (एपिग्राफी) तथा संग्रहालय विज्ञान में गहन विशेषज्ञता के साथ भारतीय विरासत संस्थान (IIH) में पीएच.डी. अध्ययनरत शोधार्थी। कुणाल (प्राक-हड़प्पा) एवं कुर्दी (चित्रित धूसर मृद्भाण्ड - PGW) जैसे ऐतिहासिक स्थलों के उत्खनन, काशी के प्राचीन अभिलेखों के दस्तावेज़ीकरण तथा राष्ट्रीय संग्रहालय में कुषाण कला संग्रहों के वैज्ञानिक अध्ययन में प्रत्यक्ष अनुभव। अंतरविषयी शोध पद्धतियों द्वारा सांस्कृतिक धरोहरों के संरक्षण एवं शोध में समर्पित।">
+        A highly accomplished Research Scholar pursuing a Ph.D. in Archaeology, specializing in Indian archaeology, epigraphy, and museum studies, with a strong academic record and practical field experience. Proven ability to identify, document, and interpret historical and cultural heritage, evidenced by contributions to significant archaeological excavations and the cataloguing of national collections. Leverages interdisciplinary expertise to drive impactful research and preserve invaluable cultural assets, positioning for advanced research roles or heritage management opportunities.
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PORTFOLIO SHOWCASE: KEY ARCHAEOLOGICAL PROJECTS
+         ========================================== -->
+    <section id="projects" class="space-y-6 pt-6 border-t border-[var(--border)]">
+      
+      <div class="flex items-baseline justify-between">
+        <div class="section-title">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+          </svg>
+          <span data-en="Key Archaeological Projects · प्रमुख पुरातात्विक परियोजनाएं" data-hi="प्रमुख पुरातात्विक परियोजनाएं · Research Projects">Key Archaeological Projects · प्रमुख पुरातात्विक परियोजनाएं</span>
+        </div>
+        <span class="text-xs text-[var(--text-dim)] font-mono">Portfolio Highlights</span>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Project 1: Kunal Excavation -->
+        <article class="project-card">
+          <div class="project-card-image-wrap">
+            <img src="assets/images/kunal-excavation.svg" alt="Kunal Pre-Harappan Stratigraphy" />
+          </div>
+          <div class="p-5 space-y-2 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="tag-badge text-[11px] mb-2">Pre-Harappan · Haryana</span>
+              <h3 class="font-semibold text-base text-[var(--text-main)]" data-en="Excavations at Kunal, Haryana (2023–24)" data-hi="कुणाल पुरातात्विक उत्खनन, हरियाणा (2023–24)">
+                Excavations at Kunal, Haryana (2023–24)
+              </h3>
+              <p class="text-xs text-[var(--text-muted)] leading-relaxed mt-1" data-en="Comprehensive field documentation, stratigraphic section recording, and artefact cataloguing at the crucial pre-Harappan settlement in the Saraswati basin." data-hi="सरस्वती-घग्गर घाटी के महत्त्वपूर्ण प्राक-हड़प्पा स्थल पर व्यापक स्तर पर पुरातात्विक दस्तावेज़ीकरण, स्तरविन्यास प्रतिवेदन तथा पुरावशेषों का सूचीकरण।">
+                Comprehensive field documentation, stratigraphic section recording, and artefact cataloguing at the crucial pre-Harappan settlement in the Saraswati basin.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-[var(--border)] text-[11px] font-mono text-[var(--text-dim)]">
+              IIH Dept. of Archaeology
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Kurdi PGW Site -->
+        <article class="project-card">
+          <div class="project-card-image-wrap">
+            <img src="assets/images/kurdi-pgw.svg" alt="Kurdi PGW Ceramic Profile" />
+          </div>
+          <div class="p-5 space-y-2 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="tag-badge text-[11px] mb-2">Painted Grey Ware (PGW) · Western UP</span>
+              <h3 class="font-semibold text-base text-[var(--text-main)]" data-en="Kurdi Excavations, Baghpat (2024–25)" data-hi="कुर्दी पुरातात्विक उत्खनन, बागपत (2024–25)">
+                Kurdi Excavations, Baghpat (2024–25)
+              </h3>
+              <p class="text-xs text-[var(--text-muted)] leading-relaxed mt-1" data-en="Excavation management, stratigraphic trench recording, and contextual ceramic compilation of Painted Grey Ware (PGW) protohistoric layers." data-hi="चित्रित धूसर मृद्भाण्ड (PGW) लौहयुगीन स्तरों का उत्खनन प्रबंधन, स्तरविन्यासीय ट्रेंच रिकॉर्डिंग तथा पुरावशेष डेटा का वैज्ञानिक संकलन।">
+                Excavation management, stratigraphic trench recording, and contextual ceramic compilation of Painted Grey Ware (PGW) protohistoric layers.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-[var(--border)] text-[11px] font-mono text-[var(--text-dim)]">
+              Field Trench Records &amp; Data
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Inscriptions of Kashi -->
+        <article class="project-card">
+          <div class="project-card-image-wrap">
+            <img src="assets/images/kashi-inscriptions.svg" alt="Inscriptions of Kashi Lithic Inscription" />
+          </div>
+          <div class="p-5 space-y-2 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="tag-badge text-[11px] mb-2">Epigraphy &amp; Palaeography · Varanasi</span>
+              <h3 class="font-semibold text-base text-[var(--text-main)]" data-en="Inscriptions of Kashi Project (2017–19)" data-hi="काशी के अभिलेख परियोजना, वाराणसी (2017–19)">
+                Inscriptions of Kashi Project (2017–19)
+              </h3>
+              <p class="text-xs text-[var(--text-muted)] leading-relaxed mt-1" data-en="Surveyed, documented, and analyzed previously unrecorded Sanskrit &amp; regional lithic inscriptions across Varanasi's sacred geography and temples." data-hi="काशी के प्राचीन मन्दिरों, मठों व गंगा घाटों से अनिर्दिष्ट एवं अप्रकाशित संस्कृत शिलालेखों की खोज, एस्टाम्पेज प्रतिलिपि एवं पुरालेखीय विश्लेषण।">
+                Surveyed, documented, and analyzed previously unrecorded Sanskrit &amp; regional lithic inscriptions across Varanasi's sacred geography and temples.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-[var(--border)] text-[11px] font-mono text-[var(--text-dim)]">
+              Jñāna-Pravāha Centre, Varanasi
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Kushan Art Collection -->
+        <article class="project-card">
+          <div class="project-card-image-wrap">
+            <img src="assets/images/kushan-sculpture.svg" alt="Kushan Sculpture Cataloguing" />
+          </div>
+          <div class="p-5 space-y-2 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="tag-badge text-[11px] mb-2">Tagore National Fellowship · Museum Studies</span>
+              <h3 class="font-semibold text-base text-[var(--text-main)]" data-en="Kushan Sculpture &amp; Stucco Art (National Museum)" data-hi="कुषाण मूर्तिकला एवं स्टुको कला (राष्ट्रीय संग्रहालय)">
+                Kushan Sculpture &amp; Stucco Art (National Museum)
+              </h3>
+              <p class="text-xs text-[var(--text-muted)] leading-relaxed mt-1" data-en="Systematic cataloguing, iconographic documentation, and comparative stylistic analysis of Kushan and Gandharan sculptures in the National Museum, New Delhi." data-hi="राष्ट्रीय संग्रहालय, नई दिल्ली में संरक्षित कुषाण कालीन मूर्तिकला एवं गांधार-मथुरा स्टुको कला संग्रह का विस्तृत सूचीकरण एवं शास्त्रीय अध्ययन।">
+                Systematic cataloguing, iconographic documentation, and comparative stylistic analysis of Kushan and Gandharan sculptures in the National Museum, New Delhi.
+              </p>
+            </div>
+            <div class="pt-3 border-t border-[var(--border)] text-[11px] font-mono text-[var(--text-dim)]">
+              Ministry of Culture, Govt. of India
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         EXPERIENCE & FIELDWORK
+         ========================================== -->
+    <section id="experience" class="space-y-6 pt-6 border-t border-[var(--border)]">
+      
+      <div class="flex items-baseline justify-between">
+        <div class="section-title">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+            <line x1="12" y1="22" x2="12" y2="15.5" />
+            <polyline points="22 8.5 12 15.5 2 8.5" />
+          </svg>
+          <span data-en="Work &amp; Archaeological Fieldwork" data-hi="कार्य एवं पुरातात्विक उत्खनन अनुभव">Work &amp; Archaeological Fieldwork</span>
+        </div>
+        <span class="text-xs text-[var(--text-dim)] font-mono">2017 — Present</span>
+      </div>
+
+      <div class="space-y-10">
+
+        <!-- Role 1: IIH -->
+        <article class="space-y-3">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--accent)] mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 3l9 7H3l9-7z" />
+              </svg>
+              <div>
+                <h3 class="text-base font-semibold text-[var(--text-main)]" data-en="Indian Institute of Heritage (IIH)" data-hi="भारतीय विरासत संस्थान (IIH)">
+                  Indian Institute of Heritage (IIH)
+                </h3>
+                <p class="text-sm text-[var(--text-muted)]" data-en="Research Assistant, Department of Archaeology" data-hi="शोध सहायक, पुरातत्व विभाग">
+                  Research Assistant, Department of Archaeology
+                </p>
+              </div>
+            </div>
+            <div class="text-xs text-[var(--text-muted)] font-mono sm:text-right flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-[var(--text-dim)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              <span data-en="Jan 2023 — Present · Noida, UP" data-hi="जनवरी 2023 — वर्तमान · नोएडा, उ.प्र.">Jan 2023 — Present · Noida, UP</span>
+            </div>
+          </div>
+
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed" data-en="Spearheaded archaeological field documentation and artefact cataloguing across multiple significant sites, contributing to the development and documentation of the IIH Museum of Art and Archaeology." data-hi="विभिन्न पुरातात्विक स्थलों पर पुरालेख व पुरावशेष दस्तावेज़ीकरण का नेतृत्व तथा IIH कला एवं पुरातत्व संग्रहालय, नोएडा के व्यवस्थित विकास में प्रमुख योगदान।">
+            Spearheaded archaeological field documentation and artefact cataloguing across multiple significant sites, contributing to the development and documentation of the IIH Museum of Art and Archaeology.
+          </p>
+
+          <ul class="text-sm text-[var(--text-main)] space-y-2 list-disc list-outside pl-4 marker:text-[var(--text-dim)]">
+            <li data-en="Conducted comprehensive archaeological field documentation, artefact cataloguing, and technical report writing for excavations at the pre-Harappan site of <strong>Kunal, Haryana</strong> (2023–24)." data-hi="प्राक-हड़प्पा स्थल <strong>कुणाल, हरियाणा</strong> (2023–24) के उत्खनन में विस्तृत पुरातात्विक दस्तावेज़ीकरण, पुरावशेष सूचीकरण एवं तकनीकी प्रतिवेदन लेखन।">
+              Conducted comprehensive archaeological field documentation, artefact cataloguing, and technical report writing for excavations at the pre-Harappan site of <strong>Kunal, Haryana</strong> (2023–24).
+            </li>
+            <li data-en="Participated actively in archaeological excavations at the Painted Grey Ware (PGW) site of <strong>Kurdi, Baghpat, Uttar Pradesh</strong> (2024–25), managing field records and data compilation." data-hi="चित्रित धूसर मृद्भाण्ड (PGW) स्थल <strong>कुर्दी, बागपत, उत्तर प्रदेश</strong> (2024–25) के उत्खनन में सक्रिय सहभागिता तथा स्तर अभिलेख डेटा संकलन।">
+              Participated actively in archaeological excavations at the Painted Grey Ware (PGW) site of <strong>Kurdi, Baghpat, Uttar Pradesh</strong> (2024–25), managing field records and data compilation.
+            </li>
+            <li data-en="Contributed significantly to the development and systematic documentation of the <strong>IIH Museum of Art and Archaeology</strong> in Noida, enhancing collection management and accessibility." data-hi="नोएडा स्थित <strong>IIH कला एवं पुरातत्व संग्रहालय</strong> के संग्रह प्रबंधन एवं सुव्यवस्थित दस्तावेज़ीकरण में महत्त्वपूर्ण योगदान।">
+              Contributed significantly to the development and systematic documentation of the <strong>IIH Museum of Art and Archaeology</strong> in Noida, enhancing collection management and accessibility.
+            </li>
+            <li data-en="Applied advanced archaeological field methods and research documentation techniques, gaining practical exposure to diverse early historical cultures and material culture analysis." data-hi="प्रारंभिक ऐतिहासिक संस्कृतियों के भौतिक अवशेषों के वैज्ञानिक विश्लेषण हेतु उन्नत पुरातात्विक पद्धतियों का सफल अनुप्रयोग।">
+              Applied advanced archaeological field methods and research documentation techniques, gaining practical exposure to diverse early historical cultures and material culture analysis.
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="tag-badge">
+              <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+              Kunal (Pre-Harappan)
+            </span>
+            <span class="tag-badge">
+              <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 19 21 5 21" /></svg>
+              Kurdi (PGW)
+            </span>
+            <span class="tag-badge">Field Documentation</span>
+            <span class="tag-badge">Artefact Cataloguing</span>
+            <span class="tag-badge">Museum Studies</span>
+          </div>
+        </article>
+
+        <!-- Role 2: Jñāna-Pravāha -->
+        <article class="space-y-3 pt-6 border-t border-[var(--border)]">
+          <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+            <div class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-[var(--accent)] mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="4" y="2" width="16" height="20" rx="2" />
+                <line x1="8" y1="6" x2="16" y2="6" />
+                <line x1="8" y1="10" x2="16" y2="10" />
+                <line x1="8" y1="14" x2="12" y2="14" />
+              </svg>
+              <div>
+                <h3 class="text-base font-semibold text-[var(--text-main)]" data-en="Jñāna-Pravāha Centre for Cultural Studies &amp; Research" data-hi="ज्ञान-प्रवाह सांस्कृतिक अध्ययन एवं अनुसंधान केंद्र">
+                  Jñāna-Pravāha Centre for Cultural Studies &amp; Research
+                </h3>
+                <p class="text-sm text-[var(--text-muted)]" data-en="Research Associate, Inscriptions of Kashi Project" data-hi="शोध सहयोगी, काशी के अभिलेख परियोजना">
+                  Research Associate, Inscriptions of Kashi Project
+                </p>
+              </div>
+            </div>
+            <div class="text-xs text-[var(--text-muted)] font-mono sm:text-right flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-[var(--text-dim)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                <line x1="16" y1="2" x2="16" y2="6" />
+                <line x1="8" y1="2" x2="8" y2="6" />
+                <line x1="3" y1="10" x2="21" y2="10" />
+              </svg>
+              <span data-en="Mar 2017 — Dec 2019 · Varanasi, UP" data-hi="मार्च 2017 — दिसम्बर 2019 · वाराणसी, उ.प्र.">Mar 2017 — Dec 2019 · Varanasi, UP</span>
+            </div>
+          </div>
+
+          <p class="text-sm text-[var(--text-muted)] leading-relaxed" data-en="Led research and documentation efforts for the 'Inscriptions of Kashi' project, focusing on identifying and preserving the region's rich epigraphic and cultural heritage." data-hi="काशी क्षेत्र की समृद्ध पुरालेखीय व सांस्कृतिक धरोहर के संरक्षण व दस्तावेज़ीकरण हेतु 'काशी के अभिलेख' परियोजना का शोध नेतृत्व।">
+            Led research and documentation efforts for the 'Inscriptions of Kashi' project, focusing on identifying and preserving the region's rich epigraphic and cultural heritage.
+          </p>
+
+          <ul class="text-sm text-[var(--text-main)] space-y-2 list-disc list-outside pl-4 marker:text-[var(--text-dim)]">
+            <li data-en="Identified and documented several previously unrecorded inscriptions in Kashi, significantly expanding the epigraphic evidence for the city's historical and cultural heritage." data-hi="काशी के अनेक पूर्व-अनिर्दिष्ट एवं अज्ञात शिलालेखों की पहचान व वैज्ञानिक दस्तावेज़ीकरण।">
+              Identified and documented several previously unrecorded inscriptions in Kashi, significantly expanding the epigraphic evidence for the city's historical and cultural heritage.
+            </li>
+            <li data-en="Conducted in-depth study and analysis of ancient inscriptions, contributing critical insights to the understanding of Kashi's historical narrative and cultural evolution." data-hi="प्राचीन अभिलेखों का गहन पुरालेखीय व भाषायी अध्ययन, जिससे काशी के ऐतिहासिक विकास पर नवीन प्रकाश पड़ा।">
+              Conducted in-depth study and analysis of ancient inscriptions, contributing critical insights to the understanding of Kashi's historical narrative and cultural evolution.
+            </li>
+            <li data-en="Implemented systematic documentation methodologies for cultural heritage assets, ensuring comprehensive preservation of invaluable historical and epigraphic data." data-hi="सांस्कृतिक धरोहरों के दीर्घकालिक संरक्षण हेतु आधुनिक डिजिटल व भौतिक पुरालेख प्रलेखन पद्धतियों का क्रियान्वयन।">
+              Implemented systematic documentation methodologies for cultural heritage assets, ensuring comprehensive preservation of invaluable historical and epigraphic data.
+            </li>
+            <li data-en="Collaborated with a research team to interpret complex epigraphic findings, enriching scholarly discourse on early historical cultures and regional history." data-hi="जटिल अभिलेखीय पाठों के अर्थ-निर्णय हेतु बहुविषयी शोध दलों के साथ समन्वय।">
+              Collaborated with a research team to interpret complex epigraphic findings, enriching scholarly discourse on early historical cultures and regional history.
+            </li>
+          </ul>
+
+          <div class="flex flex-wrap gap-1.5 pt-1">
+            <span class="tag-badge">
+              <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z" /></svg>
+              Inscriptions of Kashi
+            </span>
+            <span class="tag-badge">Epigraphy</span>
+            <span class="tag-badge">Palaeography</span>
+            <span class="tag-badge">Heritage Preservation</span>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================
+         EDUCATION
+         ========================================== -->
+    <section id="education" class="space-y-6 pt-6 border-t border-[var(--border)]">
+      <div class="section-title">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+          <path d="M6 12v5c3 3 9 3 12 0v-5" />
+        </svg>
+        <span data-en="Education · Academic Qualifications" data-hi="शिक्षा · शैक्षणिक योग्यताएं">Education · Academic Qualifications</span>
+      </div>
+
+      <div class="space-y-6">
+
+        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+          <div class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 text-[var(--accent)] mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 1 0-16 0" />
+            </svg>
+            <div>
+              <h3 class="text-base font-semibold text-[var(--text-main)]" data-en="Indian Institute of Heritage (IIH)" data-hi="भारतीय विरासत संस्थान (IIH)">
+                Indian Institute of Heritage (IIH)
+              </h3>
+              <p class="text-sm text-[var(--text-muted)]" data-en="Ph.D. in Archaeology (Research Scholar)" data-hi="पीएच.डी. पुरातत्व (शोधार्थी)">
+                Ph.D. in Archaeology (Research Scholar)
+              </p>
+            </div>
+          </div>
+          <div class="text-xs text-[var(--text-muted)] font-mono sm:text-right" data-en="Aug 2022 — Aug 2027 · Noida, UP" data-hi="अगस्त 2022 — अगस्त 2027 · नोएडा">
+            Aug 2022 — Aug 2027 · Noida, UP
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 pt-4 border-t border-[var(--border)]">
+          <div class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 text-[var(--accent)] mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+            <div>
+              <h3 class="text-base font-semibold text-[var(--text-main)]" data-en="Banaras Hindu University (BHU)" data-hi="काशी हिन्दू विश्वविद्यालय (BHU)">
+                Banaras Hindu University (BHU)
+              </h3>
+              <p class="text-sm text-[var(--text-muted)]" data-en="Master's Degree in AIHC &amp; Archaeology · <span class='text-[var(--text-main)] font-medium'>First Division</span>" data-hi="एम.ए. प्राचीन भारतीय इतिहास, संस्कृति एवं पुरातत्व (AIHC) · <span class='text-[var(--text-main)] font-medium'>प्रथम श्रेणी</span>">
+                Master's Degree in AIHC &amp; Archaeology · <span class="text-[var(--text-main)] font-medium">First Division</span>
+              </p>
+            </div>
+          </div>
+          <div class="text-xs text-[var(--text-muted)] font-mono sm:text-right" data-en="Aug 2014 — Jul 2016 · Varanasi, UP" data-hi="अगस्त 2014 — जुलाई 2016 · वाराणसी">
+            Aug 2014 — Jul 2016 · Varanasi, UP
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FELLOWSHIPS & AWARDS
+         ========================================== -->
+    <section id="fellowships" class="space-y-6 pt-6 border-t border-[var(--border)]">
+      <div class="section-title">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <circle cx="12" cy="8" r="6" />
+          <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11" />
+        </svg>
+        <span data-en="Fellowships &amp; Honors · छात्रवृत्ति एवं सम्मान" data-hi="छात्रवृत्ति एवं सम्मान · Fellowships">Fellowships &amp; Honors · छात्रवृत्ति एवं सम्मान</span>
+      </div>
+
+      <div class="space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+          <div class="flex items-start gap-2.5">
+            <svg class="w-4 h-4 text-[var(--accent)] mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+            <div>
+              <h3 class="text-base font-semibold text-[var(--text-main)]" data-en="Tagore National Scholarship" data-hi="टैगोर राष्ट्रीय छात्रवृत्ति">
+                Tagore National Scholarship
+              </h3>
+              <p class="text-sm text-[var(--text-muted)]" data-en="Ministry of Culture, Government of India (Nodal: National Museum, New Delhi)" data-hi="संस्कृति मंत्रालय, भारत सरकार (नोडल: राष्ट्रीय संग्रहालय, नई दिल्ली)">
+                Ministry of Culture, Government of India (Nodal: National Museum, New Delhi)
+              </p>
+            </div>
+          </div>
+          <div class="text-xs text-[var(--text-muted)] font-mono sm:text-right" data-en="Jan 2020" data-hi="जनवरी 2020">
+            Jan 2020
+          </div>
+        </div>
+
+        <p class="text-sm text-[var(--text-main)] leading-relaxed" data-en="Awarded the prestigious Tagore National Scholarship to undertake a research project titled <em>'A Thorough Cataloguing and Study of Kushan Sculpture and Stucco Art Collection in the National Museum.'</em> This involved systematic cataloguing, documentation, and examination of significant Kushan art pieces, contributing to national heritage preservation." data-hi="प्रतिष्ठित टैगोर राष्ट्रीय छात्रवृत्ति के अंतर्गत <em>'राष्ट्रीय संग्रहालय में कुषाण मूर्तिकला एवं स्टुको कला संग्रह का गहन सूचीकरण एवं अध्ययन'</em> शोध परियोजना का सफल सम्पादन। राष्ट्रीय धरोहर संरक्षण में महत्त्वपूर्ण योगदान।">
+          Awarded the prestigious Tagore National Scholarship to undertake a research project titled <em>'A Thorough Cataloguing and Study of Kushan Sculpture and Stucco Art Collection in the National Museum.'</em> This involved systematic cataloguing, documentation, and examination of significant Kushan art pieces, contributing to national heritage preservation.
+        </p>
+
+        <div class="flex flex-wrap gap-1.5 pt-1">
+          <span class="tag-badge">Kushan Sculpture</span>
+          <span class="tag-badge">Stucco Art</span>
+          <span class="tag-badge">National Museum, New Delhi</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CERTIFICATIONS
+         ========================================== -->
+    <section id="certifications" class="space-y-4 pt-6 border-t border-[var(--border)]">
+      <div class="section-title">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <polyline points="9 12 11 14 15 10" />
+        </svg>
+        <span data-en="Certifications · व्यावसायिक योग्यताएं" data-hi="प्रमाणपत्र · National Credentials">Certifications · व्यावसायिक योग्यताएं</span>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1">
+        <div class="flex items-start gap-2.5">
+          <svg class="w-4 h-4 text-[var(--accent)] mt-1 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <circle cx="12" cy="12" r="10" />
+            <polyline points="12 6 12 12 16 14" />
+          </svg>
+          <div>
+            <h3 class="text-base font-semibold text-[var(--text-main)]" data-en="UGC-NET in Archaeology" data-hi="यूजीसी-नेट (पुरातत्व) UGC-NET in Archaeology">
+              UGC-NET in Archaeology
+            </h3>
+            <p class="text-sm text-[var(--text-muted)]" data-en="University Grants Commission (UGC) · Qualified for Assistant Professorship" data-hi="विश्वविद्यालय अनुदान आयोग (UGC) · सहायक प्राध्यापक पद हेतु उत्तीर्ण">
+              University Grants Commission (UGC) · Qualified for Assistant Professorship
+            </p>
+          </div>
+        </div>
+        <div class="text-xs text-[var(--text-muted)] font-mono sm:text-right">
+          <span data-en="Nov 2016 · " data-hi="नवंबर 2016 · ">Nov 2016 · </span><a href="https://www.ugc.gov.in/" target="_blank" rel="noopener noreferrer" class="editorial-link">ugc.gov.in &nearr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SKILLS & METHODOLOGICAL COMPETENCIES
+         ========================================== -->
+    <section id="skills" class="space-y-6 pt-6 border-t border-[var(--border)]">
+      <div class="section-title">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <circle cx="12" cy="12" r="10" />
+          <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+        </svg>
+        <span data-en="Skills &amp; Methodologies · दक्षता एवं पद्धतियाँ" data-hi="दक्षता एवं पद्धतियाँ · Competencies">Skills &amp; Methodologies · दक्षता एवं पद्धतियाँ</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm">
+        
+        <div class="space-y-1.5">
+          <div class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <polygon points="12 2 2 7 12 12 22 7 12 2" />
+              <polyline points="2 17 12 22 22 17" />
+              <polyline points="2 12 12 17 22 12" />
+            </svg>
+            <h3 class="font-medium text-[var(--text-main)]" data-en="Archaeological Field Methods" data-hi="पुरातात्विक उत्खनन पद्धतियाँ">Archaeological Field Methods</h3>
+          </div>
+          <p class="text-xs text-[var(--text-muted)] leading-relaxed pl-5" data-en="Field Documentation, Artefact Cataloguing, Field Records, Data Compilation, Excavation Techniques, Site Management, Technical Report Writing." data-hi="उत्खनन तकनीक, स्तर अभिलेख, पुरावशेष सूचीकरण, ट्रेंच सर्वेक्षण एवं तकनीकी प्रतिवेदन लेखन।">
+            Field Documentation, Artefact Cataloguing, Field Records, Data Compilation, Excavation Techniques, Site Management, Technical Report Writing.
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+            <h3 class="font-medium text-[var(--text-main)]" data-en="Epigraphy &amp; Historical Analysis" data-hi="पुरालेखशास्त्र एवं ऐतिहासिक विश्लेषण">Epigraphy &amp; Historical Analysis</h3>
+          </div>
+          <p class="text-xs text-[var(--text-muted)] leading-relaxed pl-5" data-en="Inscription Study, Epigraphic Documentation, Cultural Heritage Research, Historical Interpretation, Early Historical Cultures." data-hi="शिलालेख अध्ययन, एस्टाम्पेज प्रलेखन, सांस्कृतिक विरासत शोध, प्राचीन लिपि-विज्ञान एवं ऐतिहासिक व्याख्या।">
+            Inscription Study, Epigraphic Documentation, Cultural Heritage Research, Historical Interpretation, Early Historical Cultures.
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 3l9 7H3l9-7z" />
+            </svg>
+            <h3 class="font-medium text-[var(--text-main)]" data-en="Museum Studies &amp; Collections" data-hi="संग्रहालय अध्ययन एवं संग्रह प्रबंधन">Museum Studies &amp; Collections</h3>
+          </div>
+          <p class="text-xs text-[var(--text-muted)] leading-relaxed pl-5" data-en="Collection Cataloguing, Museum Documentation, Art &amp; Archaeology Collections, Heritage Preservation, Exhibition Development." data-hi="संग्रह सूचीकरण, संग्रहालय प्रलेखन, कला व पुरावशेष संरक्षण एवं प्रदर्शनी संयोजन।">
+            Collection Cataloguing, Museum Documentation, Art &amp; Archaeology Collections, Heritage Preservation, Exhibition Development.
+          </p>
+        </div>
+
+        <div class="space-y-1.5">
+          <div class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+              <line x1="9" y1="9" x2="9.01" y2="9" />
+              <line x1="15" y1="9" x2="15.01" y2="9" />
+            </svg>
+            <h3 class="font-medium text-[var(--text-main)]" data-en="Art &amp; Architectural History" data-hi="कला एवं स्थापत्य इतिहास">Art &amp; Architectural History</h3>
+          </div>
+          <p class="text-xs text-[var(--text-muted)] leading-relaxed pl-5" data-en="Kushan Sculpture, Stucco Art, Indian Art History, Material Culture, Architectural Styles." data-hi="कुषाण मूर्तिकला, स्टुको कला, भारतीय कला इतिहास, प्रतिमा-विज्ञान तथा प्राचीन स्थापत्य शैलियाँ।">
+            Kushan Sculpture, Stucco Art, Indian Art History, Material Culture, Architectural Styles.
+          </p>
+        </div>
+
+        <div class="space-y-1.5 sm:col-span-2">
+          <div class="flex items-center gap-2">
+            <svg class="w-3.5 h-3.5 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+              <line x1="18" y1="20" x2="18" y2="10" />
+              <line x1="12" y1="20" x2="12" y2="4" />
+              <line x1="6" y1="20" x2="6" y2="14" />
+            </svg>
+            <h3 class="font-medium text-[var(--text-main)]" data-en="Research &amp; Data Management" data-hi="अनुसंधान एवं डेटा प्रबंधन">Research &amp; Data Management</h3>
+          </div>
+          <p class="text-xs text-[var(--text-muted)] leading-relaxed pl-5" data-en="Academic Research, Data Analysis, Qualitative Research, Documentation, Interdisciplinary Studies." data-hi="अकादमिक शोध, गुणात्मक डेटा विश्लेषण, अभिलेखागार प्रलेखन एवं अंतरविषयी अध्ययन।">
+            Academic Research, Data Analysis, Qualitative Research, Documentation, Interdisciplinary Studies.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         RESEARCH INTERESTS
+         ========================================== -->
+    <section id="interests" class="space-y-4 pt-6 border-t border-[var(--border)]">
+      <div class="section-title">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <circle cx="11" cy="11" r="8" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+        <span data-en="Areas of Interest · शोध के मुख्य क्षेत्र" data-hi="शोध के मुख्य क्षेत्र · Areas of Study">Areas of Interest · शोध के मुख्य क्षेत्र</span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="tag-badge">
+          <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polygon points="12 2 2 7 12 12 22 7 12 2" /></svg>
+          <span data-en="Indian Archaeology" data-hi="भारतीय पुरातत्व">Indian Archaeology</span>
+        </span>
+        <span class="tag-badge">
+          <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="4" y="2" width="16" height="20" rx="2" /></svg>
+          <span data-en="Epigraphy" data-hi="पुरालेखशास्त्र">Epigraphy</span>
+        </span>
+        <span class="tag-badge">
+          <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 21h18M3 10h18M5 10v11M9 10v11M15 10v11M19 10v11M12 3l9 7H3l9-7z" /></svg>
+          <span data-en="Art &amp; Architecture" data-hi="कला एवं स्थापत्य">Art &amp; Architecture</span>
+        </span>
+        <span class="tag-badge">
+          <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><circle cx="12" cy="12" r="9" /></svg>
+          <span data-en="Early Historical Cultures" data-hi="प्रारंभिक ऐतिहासिक संस्कृतियाँ">Early Historical Cultures</span>
+        </span>
+        <span class="tag-badge">
+          <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polygon points="12 2 19 21 5 21" /></svg>
+          <span data-en="Material Culture" data-hi="भौतिक संस्कृति">Material Culture</span>
+        </span>
+        <span class="tag-badge">
+          <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><polyline points="6 9 6 2 18 2 18 9" /></svg>
+          <span data-en="Field Excavation" data-hi="उत्खनन पद्धतियाँ">Field Excavation</span>
+        </span>
+        <span class="tag-badge">
+          <svg class="w-3 h-3 text-[var(--accent)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" /><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" /></svg>
+          <span data-en="Museum Studies" data-hi="संग्रहालय विज्ञान">Museum Studies</span>
+        </span>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT
+         ========================================== -->
+    <section id="contact" class="space-y-4 pt-6 border-t border-[var(--border)] no-print">
+      <div class="section-title">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+        </svg>
+        <span data-en="Contact &amp; Inquiries · संपर्क" data-hi="संपर्क एवं संवाद · Contact">Contact &amp; Inquiries · संपर्क</span>
+      </div>
+
+      <p class="text-sm text-[var(--text-muted)] leading-relaxed" data-en="For academic inquiries, excavation consultations, or research correspondence:" data-hi="अकादमिक विचार-विमर्श, पुरातात्विक परामर्श अथवा शोध संवाद हेतु:">
+        For academic inquiries, excavation consultations, or research correspondence:
+      </p>
+
+      <div class="space-y-3 text-sm">
+        <div class="flex items-start gap-2.5">
+          <svg class="w-4 h-4 text-[var(--accent)] mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          <div>
+            <span class="text-[var(--text-dim)] text-xs uppercase tracking-wider block" data-en="Email" data-hi="ईमेल">Email</span>
+            <a href="mailto:ajeet.mishra@example.com" class="editorial-link font-medium">ajeet.mishra@example.com</a>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-2.5">
+          <svg class="w-4 h-4 text-[var(--accent)] mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg>
+          <div>
+            <span class="text-[var(--text-dim)] text-xs uppercase tracking-wider block" data-en="Phone" data-hi="दूरभाष">Phone</span>
+            <a href="tel:+919876543210" class="editorial-link font-medium">+91-9876543210</a>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-2.5">
+          <svg class="w-4 h-4 text-[var(--accent)] mt-0.5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          <div>
+            <span class="text-[var(--text-dim)] text-xs uppercase tracking-wider block" data-en="Institutional Base" data-hi="संस्थान का पता">Institutional Base</span>
+            <span class="text-[var(--text-main)]" data-en="Department of Archaeology, Indian Institute of Heritage (IIH), Noida, Uttar Pradesh, India" data-hi="पुरातत्व विभाग, भारतीय विरासत संस्थान (IIH), नोएडा, उत्तर प्रदेश, भारत">Department of Archaeology, Indian Institute of Heritage (IIH), Noida, Uttar Pradesh, India</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="pt-12 border-t border-[var(--border)] text-xs text-[var(--text-dim)] flex flex-col sm:flex-row items-baseline justify-between gap-4 no-print">
+      <p>&copy; 2026 Ajeet Kumar Mishra · <span data-en="Curriculum Vitae &amp; Research Portfolio" data-hi="अकादमिक सीवी एवं शोध पोर्टफोलियो">Curriculum Vitae &amp; Research Portfolio</span></p>
+      <a href="#top" class="hover:text-[var(--text-main)] transition-colors inline-flex items-center gap-1">
+        <span data-en="Back to top" data-hi="शीर्ष पर जाएं">Back to top</span>
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+          <line x1="12" y1="19" x2="12" y2="5" />
+          <polyline points="5 12 12 5 19 12" />
+        </svg>
+      </a>
+    </footer>
+
+  </main>
+
+  <!-- Notification Toast -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

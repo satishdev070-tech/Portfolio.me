@@ -17,6 +17,13 @@ export default async function proxy(request: NextRequest) {
   const host = (request.headers.get('host') ?? '').toLowerCase()
   const path = request.nextUrl.pathname
 
+  // The hosting provider's temporary address (*.hostingersite.com) always stays attached to the site;
+  // send visitors to the real domain instead of treating it as a customer domain.
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL
+  if (/\.hostingersite\.com(:\d+)?$/.test(host) && appUrl && !appUrl.includes(host)) {
+    return NextResponse.redirect(new URL(`${path}${request.nextUrl.search}`, appUrl), 308)
+  }
+
   const kind = classifyHost(host)
   if (kind.type === 'site' || kind.type === 'domain') {
     if (path.startsWith('/api/')) return NextResponse.next()

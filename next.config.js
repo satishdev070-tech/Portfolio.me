@@ -1,4 +1,6 @@
 // @ts-check
+// JavaScript, not TypeScript: Hostinger build servers lack glibc 2.29, so Next falls back to WASM SWC,
+// which cannot compile next.config.ts (and cannot run Turbopack; hence `next build --webpack`).
 
 // Security headers for every response (product and published sites).
 // CSP is header-based (no nonces) so published sites stay statically cacheable; user content is

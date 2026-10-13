@@ -16,6 +16,10 @@
 # next.js
 /.next/
 /out/
+# Temporary files created by Next.js / hosting config transpilers.
+/next.config.compiled.js
+/*.next.config
+/*.next.config.*
 
 # production
 /build

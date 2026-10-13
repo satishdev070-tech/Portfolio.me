@@ -1,4 +1,4 @@
-import type { NextConfig } from 'next'
+// @ts-check
 
 // Security headers for every response (product and published sites).
 // CSP is header-based (no nonces) so published sites stay statically cacheable; user content is
@@ -30,7 +30,8 @@ const securityHeaders = [
   ...(isDev ? [] : [{ key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' }]),
 ]
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   poweredByHeader: false,
   serverExternalPackages: ['sharp', 'unpdf', 'mammoth'],
   experimental: {
@@ -42,4 +43,4 @@ const nextConfig: NextConfig = {
   },
 }
 
-export default nextConfig
+module.exports = nextConfig

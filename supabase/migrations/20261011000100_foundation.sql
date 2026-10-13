@@ -29,7 +29,7 @@ end $$;
 
 create table public.users (
   id uuid primary key references auth.users (id) on delete cascade,
-  email citext not null,
+  email extensions.citext not null,
   full_name text check (char_length(full_name) <= 120),
   avatar_url text,
   locale text not null default 'en' check (locale ~ '^[a-z]{2}(-[A-Z]{2})?$'),
@@ -201,7 +201,7 @@ insert into public.platform_settings (key, value, is_public, description) values
   ('analytics.retention_days', '400', false, 'Raw analytics event retention');
 
 create table public.reserved_slugs (
-  slug citext primary key,
+  slug extensions.citext primary key,
   reason text not null default 'system',
   created_at timestamptz not null default now()
 );

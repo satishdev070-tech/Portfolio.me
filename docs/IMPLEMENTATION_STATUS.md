@@ -82,3 +82,13 @@ models / routing, domains, audit log.
 5. **Rate limiting** in a shared store for multi-instance deployments.
 6. Team invites UI, Google sign-in, GST invoices, contact form/lead capture, digital card/QR, PDF export.
 7. Drag-and-drop section ordering (up/down controls today).
+
+## Deployment compatibility
+
+The Next.js configuration intentionally uses `next.config.js` (with JSDoc type checking), rather than
+`next.config.ts`. This avoids hosting providers' transient TypeScript-config transpilation artifacts;
+`next.config.compiled.js` and hashed `*.next.config*` files are ignored.
+
+On 2026-10-11, `npm run typecheck`, `npm run lint`, the 29 unit tests, and `npm run build` all passed
+after this configuration change. Database tests require a running local Supabase stack and were not
+available in this environment.

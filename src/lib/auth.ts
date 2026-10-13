@@ -50,8 +50,11 @@ export const getViewer = cache(async (): Promise<Viewer | null> => {
 
 export async function requireViewer(): Promise<Viewer> {
   const viewer = await getViewer()
-  if (!viewer) redirect('/login')
-  return viewer
+  if (viewer) return viewer
+  // Signed in but the account records can't be loaded (e.g. database problem): say so instead of
+  // bouncing between /login and /dashboard forever.
+  const { data } = await (await createServerSupabase()).auth.getUser()
+  redirect(data.user ? '/login?error=account' : '/login')
 }
 
 /** For server actions / routes: throws instead of redirecting. */

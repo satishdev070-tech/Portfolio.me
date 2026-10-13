@@ -53,7 +53,7 @@ export default async function proxy(request: NextRequest) {
     login.searchParams.set('next', path)
     return NextResponse.redirect(login)
   }
-  if (user && (path === '/login' || path === '/signup')) {
+  if (user && (path === '/login' || path === '/signup') && !request.nextUrl.searchParams.has('error')) {
     return NextResponse.redirect(new URL('/dashboard', request.url))
   }
   return response

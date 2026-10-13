@@ -10,7 +10,13 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
     <>
       <h1 className="text-2xl font-semibold tracking-tight">Welcome back</h1>
       <p className="mt-1 text-sm text-muted-foreground">Sign in to edit and publish your website.</p>
-      {sp.error ? <p role="alert" className="mt-4 rounded-lg bg-destructive/10 p-3 text-sm text-destructive">That sign-in link didn’t work or has expired. Please try again.</p> : null}
+      {sp.error ? (
+        <p role="alert" className="mt-4 rounded-lg bg-destructive/10 p-3 text-sm text-destructive">
+          {sp.error === 'account'
+            ? 'You’re signed in, but your account couldn’t be loaded. Please try again shortly or contact support.'
+            : 'That sign-in link didn’t work or has expired. Please try again.'}
+        </p>
+      ) : null}
       <LoginForm next={sp.next} />
       <p className="mt-6 text-center text-sm text-muted-foreground">New here? <Link href="/signup" className="font-medium text-foreground underline-offset-4 hover:underline">Create a free account</Link></p>
     </>

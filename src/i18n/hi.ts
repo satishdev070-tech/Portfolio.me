@@ -87,5 +87,6 @@ export const hi: Messages = {
   'site.languages': 'भाषाएँ',
   'site.location': 'स्थान',
   'site.menu': 'मेन्यू',
+  'site.sample_profile': '{app} को दिखाने के लिए बनाया गया नमूना प्रोफ़ाइल। व्यक्ति और विवरण काल्पनिक हैं।',
   'site.skip_to_content': 'मुख्य सामग्री पर जाएँ',
 }

@@ -4,7 +4,7 @@ import { ArrowRight, Check, Circle, Sparkles } from 'lucide-react'
 import { requireViewer, getCurrentWebsite } from '@/lib/auth'
 import { getEntitlements, hasFeature } from '@/lib/entitlements'
 import { createServerSupabase } from '@/lib/supabase/server'
-import { publicEnv, siteUrl } from '@/lib/env'
+import { publicEnv, siteAddress, siteUrl } from '@/lib/env'
 import { PageHeader } from '@/components/app/page-header'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
@@ -48,7 +48,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
     { label: 'Profile completion', value: `${completion?.percent ?? 0}%`, sub: `${items.filter((i) => i.done).length} of ${items.length} done`, href: '/profile' },
     { label: 'Views, last 30 days', value: (analytics?.totals.views ?? 0).toLocaleString('en-IN'), sub: `${(analytics?.totals.unique_visitors ?? 0).toLocaleString('en-IN')} unique visitors`, href: '/analytics' },
     { label: 'Plan', value: entitlements.plan.name, sub: entitlements.subscription?.current_period_end ? `Renews ${new Date(entitlements.subscription.current_period_end).toLocaleDateString('en-IN')}` : 'Free forever', href: '/billing' },
-    { label: 'Domain', value: domainRes.data?.status === 'active' ? domainRes.data.domain : `${website.slug}.${publicEnv.rootDomain}`, sub: domainRes.data ? `Custom domain ${domainRes.data.status}` : hasFeature(entitlements, 'custom_domain') ? 'Connect your own domain' : 'Free HelloMe address', href: '/domain' },
+    { label: 'Domain', value: domainRes.data?.status === 'active' ? domainRes.data.domain : siteAddress(website.slug), sub: domainRes.data ? `Custom domain ${domainRes.data.status}` : hasFeature(entitlements, 'custom_domain') ? 'Connect your own domain' : `Free ${publicEnv.appName} address`, href: '/domain' },
     { label: 'AI credits', value: `${usage?.ai_credits_used ?? 0} / ${fmtLimit(usage?.ai_credits_limit ?? 0)}`, sub: 'This billing period', href: '/ai' },
     { label: 'Storage', value: `${storageMb < 10 ? storageMb.toFixed(1) : Math.round(storageMb)} MB`, sub: `of ${fmtLimit(usage?.storage_limit_mb ?? 0)} MB`, href: '/media' },
   ]
@@ -111,7 +111,7 @@ export default async function DashboardPage({ searchParams }: { searchParams: Pr
           <ol className="mt-4 grid gap-4 text-sm">
             <li><Link href="/import" className="font-medium hover:underline">Import your CV</Link><p className="text-muted-foreground">Fill experience, education and skills in one go. You review before saving.</p></li>
             <li><Link href="/editor?tab=design" className="font-medium hover:underline">Make it yours</Link><p className="text-muted-foreground">Colours, fonts and section order.</p></li>
-            <li><Link href="/editor" className="font-medium hover:underline">{website.status === 'published' ? 'Publish your changes' : 'Publish'}</Link><p className="text-muted-foreground">Go live at {website.slug}.{publicEnv.rootDomain}</p></li>
+            <li><Link href="/editor" className="font-medium hover:underline">{website.status === 'published' ? 'Publish your changes' : 'Publish'}</Link><p className="text-muted-foreground">Go live at {siteAddress(website.slug)}</p></li>
             {!hasFeature(entitlements, 'custom_domain') ? <li><Link href="/billing" className="font-medium hover:underline">Use your own domain</Link><p className="text-muted-foreground">Available on the Advanced plan.</p></li> : null}
           </ol>
         </section>

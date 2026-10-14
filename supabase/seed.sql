@@ -148,7 +148,7 @@ update public.professions set profile_fields = '[{"key":"license_number","label"
 insert into public.features (key, name, description, kind, unit, sort_order) values
   ('premium_templates', 'Premium templates', 'Publish with any premium template', 'boolean', null, 10),
   ('advanced_sections', 'Advanced sections', 'FAQ, timeline, press, news, products and video sections', 'boolean', null, 20),
-  ('remove_branding', 'Remove HelloMe branding', 'Hide the "Made with HelloMe" footer', 'boolean', null, 30),
+  ('remove_branding', 'Remove platform branding', 'Hide the "Made with" footer on your site', 'boolean', null, 30),
   ('advanced_seo', 'Advanced SEO', 'Custom social image, keywords and canonical URL', 'boolean', null, 40),
   ('analytics_basic', 'Analytics', 'Page views and unique visitors', 'boolean', null, 50),
   ('analytics_advanced', 'Advanced analytics', 'Top pages, referrers, devices, countries and clicks', 'boolean', null, 60),
@@ -166,10 +166,10 @@ on conflict (key) do update set name = excluded.name, description = excluded.des
   unit = excluded.unit, sort_order = excluded.sort_order;
 
 insert into public.subscription_plans (slug, name, description, price_minor, currency, billing_interval, is_default, is_featured, sort_order, highlights) values
-  ('free', 'Free', 'A complete professional website on a HelloMe address.', 0, 'INR', 'month', true, false, 10,
-     '{"1 website on yourname.hellome.in","Free templates","Core sections","Basic SEO","25 AI credits / month","50 MB storage","Basic analytics"}'),
+  ('free', 'Free', 'A complete professional website on a free address.', 0, 'INR', 'month', true, false, 10,
+     '{"1 website with a free address","Free templates","Core sections","Basic SEO","25 AI credits / month","50 MB storage","Basic analytics"}'),
   ('basic', 'Basic', 'Premium design and deeper insight.', 19900, 'INR', 'month', false, true, 20,
-     '{"Everything in Free","Premium templates","Advanced sections","Remove HelloMe branding","Advanced SEO","Advanced analytics","200 AI credits / month","500 MB storage"}'),
+     '{"Everything in Free","Premium templates","Advanced sections","Remove platform branding","Advanced SEO","Advanced analytics","200 AI credits / month","500 MB storage"}'),
   ('advanced', 'Advanced', 'Your own domain and the best AI.', 29900, 'INR', 'month', false, false, 30,
      '{"Everything in Basic","Custom domain","Advanced AI models","1,000 AI credits / month","Up to 3 websites","2 GB storage"}')
 on conflict (slug) do update set name = excluded.name, description = excluded.description, highlights = excluded.highlights,

@@ -91,6 +91,13 @@ describe('SiteRenderer', () => {
     expect(renderToStaticMarkup(<SiteRenderer doc={doc} preview />)).toContain('id="experience"')
   })
 
+  it('shows the sample-profile notice only on sample sites', () => {
+    const doc = demoDocument({ template, demoKey: 'doctor', baseUrl: 'http://x' })
+    expect(renderToStaticMarkup(<SiteRenderer doc={doc} />)).not.toContain('hm-sample-note')
+    doc.website.settings = { sample: true }
+    expect(renderToStaticMarkup(<SiteRenderer doc={doc} />)).toContain('fictional')
+  })
+
   it('renders Hindi labels when the site locale is hi', () => {
     const doc = demoDocument({ template, demoKey: 'doctor', baseUrl: 'http://x', locale: 'hi' })
     const html = renderToStaticMarkup(<SiteRenderer doc={doc} />)

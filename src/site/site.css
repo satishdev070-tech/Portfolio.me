@@ -25,6 +25,7 @@
 .hm-container { width: 100%; max-width: var(--hm-width); margin: 0 auto; padding: 0 var(--hm-gutter); }
 .hm-skip { position: absolute; left: -9999px; top: 0; background: var(--hm-primary); color: var(--hm-primary-contrast); padding: .5rem 1rem; z-index: 50; }
 .hm-skip:focus { left: 1rem; top: 1rem; }
+.hm-sample-note { margin: 0; padding: .5rem var(--hm-gutter); text-align: center; font-size: .8125rem; background: var(--hm-surface); color: var(--hm-muted); border-bottom: 1px solid var(--hm-border); }
 
 /* Typography */
 .hm-h1 { font-family: var(--hm-font-heading); font-weight: var(--hm-heading-weight); font-size: clamp(2.25rem, 1.5rem + 3.2vw, 3.75rem); line-height: 1.05; letter-spacing: -0.025em; text-wrap: balance; }

@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     getTemplates(), getProfessions(), createPublicSupabase().rpc('list_published_sites', { p_after: '', p_limit: 5000 }),
   ])
   return [
-    ...['', '/templates', '/pricing', '/features', '/about'].map((p) => ({ url: `${base}${p}`, changeFrequency: 'weekly' as const })),
+    ...['', '/templates', '/showcase', '/pricing', '/features', '/about'].map((p) => ({ url: `${base}${p}`, changeFrequency: 'weekly' as const })),
     ...templates.map((t) => ({ url: `${base}/templates/${t.slug}`, lastModified: t.published_at ?? undefined })),
     ...professions.map((p) => ({ url: `${base}/profession/${p.slug}` })),
     ...(sites ?? []).map((s) => ({ url: s.custom_domain ? `https://${s.custom_domain}` : siteUrl(s.slug), lastModified: s.published_at })),

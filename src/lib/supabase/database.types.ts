@@ -1300,6 +1300,11 @@ isOneToOne: false
               "custom_domain": string,"published_at": string,"slug": string
             }[]
                            },
+"list_showcase_sites":
+{ Args: Record<PropertyKey, never>; Returns: {
+              "avatar_url": string,"category": string,"headline": string,"name": string,"profession": string,"slug": string,"template": string
+            }[]
+                           },
 "publish_website":
 { Args: { "p_note"?: string,"p_website": string }; Returns: Json
                            },

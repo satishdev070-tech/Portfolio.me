@@ -3,14 +3,14 @@ import { ArrowRight, Check, FileUp, Globe, Palette, Sparkles } from 'lucide-reac
 import { getCategories, getPlans, getProfessions, getTemplates, formatPrice } from '@/lib/catalog'
 import { TemplatePreview } from '@/components/marketing/template-preview'
 import { buttonVariants } from '@/components/ui/button'
-import { publicEnv } from '@/lib/env'
+import { siteAddress } from '@/lib/env'
 import { cn } from '@/lib/utils'
 
 const STEPS = [
   { icon: Sparkles, title: 'Tell us what you do', body: 'Doctor, advocate, professor, electrician, creator: pick your profession and we suggest the right sections.' },
   { icon: FileUp, title: 'Import or write', body: 'Upload your CV or LinkedIn PDF. AI drafts your bio and services; you review every line before it is saved.' },
   { icon: Palette, title: 'Choose a design', body: 'Professional templates you can tune: colours, fonts, spacing and sections. Switch any time without losing content.' },
-  { icon: Globe, title: 'Publish', body: `Go live on yourname.${publicEnv.rootDomain.split(':')[0]} for free. Connect your own domain when you are ready.` },
+  { icon: Globe, title: 'Publish', body: `Go live on ${siteAddress('yourname')} for free. Connect your own domain when you are ready.` },
 ]
 
 export default async function Home() {

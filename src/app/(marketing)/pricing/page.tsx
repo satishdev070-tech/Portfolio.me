@@ -5,6 +5,7 @@ import { getPlans, formatPrice } from '@/lib/catalog'
 import { createPublicSupabase } from '@/lib/supabase/admin'
 import { buttonVariants } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { publicEnv } from '@/lib/env'
 
 export const metadata: Metadata = { title: 'Pricing', description: 'Free forever plan, plus Basic and Advanced plans for premium templates, custom domains and more AI.' }
 
@@ -48,7 +49,7 @@ export default async function PricingPage() {
           <caption className="sr-only">Plan comparison</caption>
           <thead><tr className="border-b"><th scope="col" className="p-4 text-left font-medium">Compare plans</th>{plans.map((p) => <th key={p.id} scope="col" className="p-4 text-center font-medium">{p.name}</th>)}</tr></thead>
           <tbody>
-            <tr className="border-b"><th scope="row" className="p-4 text-left font-normal">Professional website on your HelloMe address</th>{plans.map((p) => <td key={p.id} className="p-4 text-center"><Check className="mx-auto size-4 text-success" aria-label="Included" /></td>)}</tr>
+            <tr className="border-b"><th scope="row" className="p-4 text-left font-normal">Professional website on your {publicEnv.appName} address</th>{plans.map((p) => <td key={p.id} className="p-4 text-center"><Check className="mx-auto size-4 text-success" aria-label="Included" /></td>)}</tr>
             {(features ?? []).filter((f) => f.key !== 'custom_css').map((f) => (
               <tr key={f.key} className="border-b last:border-0">
                 <th scope="row" className="p-4 text-left font-normal">{f.name}<span className="block text-xs text-muted-foreground">{f.description}</span></th>

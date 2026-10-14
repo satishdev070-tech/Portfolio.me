@@ -9,7 +9,7 @@ import { action, AppError, unwrap } from '@/lib/errors'
 import { invalidateSite } from '@/lib/sites'
 import { parseInput, sectionContentSchema, seoSchema, slugSchema, themeSchema } from '@/lib/validation/schemas'
 import { asJson } from '@/lib/supabase/json'
-import { publicEnv, rootHostname } from '@/lib/env'
+import { rootHostname } from '@/lib/env'
 
 async function ownedWebsite(websiteId: string) {
   const viewer = await assertViewer()
@@ -279,6 +279,3 @@ function stripNulls<T extends Record<string, unknown>>(o: T): Partial<T> {
   return Object.fromEntries(Object.entries(o).filter(([, v]) => v !== null && v !== undefined && !(Array.isArray(v) && !v.length))) as Partial<T>
 }
 
-export async function siteLinks(slug: string) {
-  return { subdomain: `${slug}.${publicEnv.rootDomain}`, path: `${publicEnv.appUrl}/u/${slug}` }
-}

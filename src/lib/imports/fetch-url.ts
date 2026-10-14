@@ -2,11 +2,12 @@ import 'server-only'
 import { lookup } from 'node:dns/promises'
 import { isIP } from 'node:net'
 import { AppError } from '@/lib/errors'
+import { publicEnv } from '@/lib/env'
 
 // Fetching user-supplied URLs safely: public http(s) only, private/reserved addresses blocked
 // (checked after DNS resolution and again on every redirect), robots.txt respected, size/time capped.
 
-const UA = 'HelloMeImporter/1.0 (+https://hellome.in/bot; profile import on user request)'
+const UA = `ProfileImporter/1.0 (+${publicEnv.appUrl}; profile import on user request)`
 const MAX_BYTES = 2 * 1024 * 1024
 
 export function isPrivateAddress(ip: string): boolean {
@@ -44,7 +45,7 @@ export async function robotsAllows(url: URL): Promise<boolean> {
       const line = raw.split('#')[0].trim()
       const [k, ...rest] = line.split(':')
       const v = rest.join(':').trim()
-      if (/^user-agent$/i.test(k)) applies = v === '*' || /hellome/i.test(v)
+      if (/^user-agent$/i.test(k)) applies = v === '*' || /profileimporter/i.test(v)
       else if (applies && /^disallow$/i.test(k) && v) disallow.push(v)
     }
     return !disallow.some((p) => url.pathname.startsWith(p))

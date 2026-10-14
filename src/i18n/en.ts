@@ -86,6 +86,7 @@ export const en = {
   'site.languages': 'Languages',
   'site.location': 'Based in',
   'site.menu': 'Menu',
+  'site.sample_profile': 'Sample profile created to showcase {app}. The person and details are fictional.',
   'site.skip_to_content': 'Skip to content',
 } as const
 

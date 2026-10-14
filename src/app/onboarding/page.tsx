@@ -4,7 +4,7 @@ import { requireViewer, getCurrentWebsite } from '@/lib/auth'
 import { getCategories, getProfessions, getTemplates } from '@/lib/catalog'
 import { OnboardingWizard } from '@/components/onboarding/wizard'
 import { Logo } from '@/components/logo'
-import { publicEnv } from '@/lib/env'
+import { publicEnv, siteAddressParts } from '@/lib/env'
 
 export const metadata: Metadata = { title: 'Set up your website' }
 
@@ -18,7 +18,7 @@ export default async function OnboardingPage({ searchParams }: { searchParams: P
       <main className="mx-auto max-w-4xl px-4 py-10">
         <OnboardingWizard
           appName={publicEnv.appName}
-          rootDomain={publicEnv.rootDomain}
+          addressParts={siteAddressParts()}
           defaultName={viewer.fullName ?? ''}
           categories={categories.map(({ id, slug, name }) => ({ id, slug, name }))}
           professions={professions.map(({ id, slug, name, category_id, synonyms }) => ({ id, slug, name, category_id, synonyms }))}

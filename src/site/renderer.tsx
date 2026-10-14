@@ -50,6 +50,9 @@ export function SiteRenderer({ doc, preview = false }: { doc: SiteDocument; prev
       style={style}
     >
       <a className="hm-skip" href="#main">{t('site.skip_to_content')}</a>
+      {doc.website.settings?.sample === true ? (
+        <p className="hm-sample-note" role="note">{t('site.sample_profile', { app: publicEnv.appName })}</p>
+      ) : null}
       {shell !== 'sidebar' ? (
         <header className="hm-nav">
           <div className="hm-container hm-nav__inner">

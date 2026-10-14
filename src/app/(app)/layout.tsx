@@ -4,7 +4,7 @@ import { ExternalLink, LogOut } from 'lucide-react'
 import { requireViewer, getCurrentWebsite, listWebsites } from '@/lib/auth'
 import { getEntitlements } from '@/lib/entitlements'
 import { getTranslator } from '@/i18n'
-import { publicEnv, siteUrl } from '@/lib/env'
+import { siteAddress, siteUrl } from '@/lib/env'
 import { signOut } from '@/app/actions/auth'
 import { Logo } from '@/components/logo'
 import { NAV } from '@/components/shell/nav'
@@ -56,7 +56,7 @@ export default async function AppLayout({ children }: { children: React.ReactNod
           </div>
           {website.status === 'published' ? (
             <a href={siteUrl(website.slug)} target="_blank" rel="noopener" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground">
-              <span className="hidden sm:inline">{website.slug}.{publicEnv.rootDomain}</span>
+              <span className="hidden sm:inline">{siteAddress(website.slug)}</span>
               <span className="sm:hidden">View site</span>
               <ExternalLink className="size-3.5" />
             </a>

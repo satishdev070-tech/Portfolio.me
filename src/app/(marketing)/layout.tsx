@@ -15,6 +15,7 @@ export default async function MarketingLayout({ children }: { children: React.Re
             <Logo />
             <nav className="hidden items-center gap-6 text-sm text-muted-foreground md:flex" aria-label="Main">
               <Link href="/templates" className="hover:text-foreground">Templates</Link>
+              <Link href="/showcase" className="hover:text-foreground">Showcase</Link>
               <Link href="/features" className="hover:text-foreground">Features</Link>
               <Link href="/pricing" className="hover:text-foreground">Pricing</Link>
               <Link href="/about" className="hover:text-foreground">About</Link>
@@ -41,6 +42,7 @@ export default async function MarketingLayout({ children }: { children: React.Re
           </div>
           <nav className="grid gap-2 text-muted-foreground" aria-label="Product">
             <Link href="/templates" className="hover:text-foreground">Templates</Link>
+            <Link href="/showcase" className="hover:text-foreground">Showcase</Link>
             <Link href="/pricing" className="hover:text-foreground">Pricing</Link>
             <Link href="/features" className="hover:text-foreground">Features</Link>
           </nav>

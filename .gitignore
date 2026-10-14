@@ -49,3 +49,6 @@ next-env.d.ts
 .claude/
 supabase/.temp/
 supabase/.branches/
+
+# one-off local secrets
+.admin-temp-password.txt

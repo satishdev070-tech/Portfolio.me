@@ -19,7 +19,7 @@ type Template = { id: string; slug: string; name: string; tier: string; professi
 const STEPS = ['What you do', 'About you', 'Template', 'Address']
 
 export function OnboardingWizard(props: {
-  appName: string; rootDomain: string; defaultName: string; categories: Category[]; professions: Profession[]; templates: Template[]
+  appName: string; addressParts: { prefix: string; suffix: string }; defaultName: string; categories: Category[]; professions: Profession[]; templates: Template[]
   initialTemplate?: string; initialProfession?: string
 }) {
   const router = useRouter()
@@ -174,10 +174,10 @@ export function OnboardingWizard(props: {
             <Field label="Website address" htmlFor="slug" error={slugState.available === false ? slugState.reason || 'Not available' : undefined}
               hint={slugState.checking ? 'Checking…' : slugState.available ? 'Available' : 'Lowercase letters, numbers and hyphens.'}>
               <div className="flex h-11 items-center overflow-hidden rounded-lg border bg-card focus-within:ring-3 focus-within:ring-ring/50">
-                <span className="pl-3 text-sm text-muted-foreground">https://</span>
+                <span className="shrink-0 pl-3 text-sm text-muted-foreground">{props.addressParts.prefix}</span>
                 <input id="slug" value={slug} onChange={(e) => setSlug(e.target.value.toLowerCase().replace(/[^a-z0-9-]/g, ''))} maxLength={30}
-                  className="h-full min-w-0 flex-1 bg-transparent px-1 text-base outline-none" aria-describedby="slug-suffix" />
-                <span id="slug-suffix" className="pr-3 text-sm text-muted-foreground">.{props.rootDomain}</span>
+                  className="h-full min-w-0 flex-1 bg-transparent px-1 text-base outline-none" />
+                {props.addressParts.suffix ? <span id="slug-suffix" className="pr-3 text-sm text-muted-foreground">{props.addressParts.suffix}</span> : null}
               </div>
             </Field>
             <Field label="Website language" htmlFor="lang">
